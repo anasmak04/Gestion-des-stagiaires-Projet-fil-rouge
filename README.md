@@ -26,5 +26,18 @@ front-end - with Angular 11 as the main framework, with Templates, Components an
 </li>
 <li>Maven 3.8.6
 </li>
+</ul>
+
+# Front-end
+<h2>Technology stack</h2>
+  <ul>
+  <li>angular 14</li>
+  <li>angular typescript</li>
+  <li>html5</li>
+  <li>css3</li>
+  <li>bootstrap</li>
+  <li>angular material</li>
+
+
 
 </ul>
