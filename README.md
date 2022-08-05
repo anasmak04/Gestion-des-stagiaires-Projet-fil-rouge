@@ -14,3 +14,17 @@ front-end - with Angular 11 as the main framework, with Templates, Components an
 </li>
 <li>database - submitted data will be stored in the PostgreSQL database.</li>
 </ul>
+
+# Back-end
+<h2>Technology stack</h2>
+<ul>
+<li>  Java 18
+</li>
+  <li>Spring Boot 2.7.1.RELEASE,
+</li>
+<li>PostgreSQL 15,
+</li>
+<li>Maven 3.8.6
+</li>
+
+</ul>
