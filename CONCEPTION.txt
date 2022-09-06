@@ -3,7 +3,8 @@
 • Chaque utilisateur est defini par: o Identifiant (id) o Login o email o  o pwd 
 • Chaque stagiaire est defini par: o Identifiant (id) o Nom o Pre-nom o Civilite (F ou M) o Photo 
 • Chaque filiere est definie par: o Identifiant (id) o Nom o Niveau (Q, T, TS, L, Ma,...) 
-• Un stagiaire peut s'inscrire dans une seule filiere • Une filiere peut regrouper plusieurs stagiaires 
+• Un stagiaire peut s'inscrire dans une seule filiere et peut regrouper plusieurs stagiaires many to one •
+• Une filiere peut regrouper plusieurs stagiaires 
 
 
 
