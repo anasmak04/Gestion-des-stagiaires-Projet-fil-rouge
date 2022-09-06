@@ -1,5 +1,5 @@
 # Project-fil-rouge-
-# introduction about project
+# introduction about project  Gestion des stagaires
 Spring Boot application with Angular 14 on the frontend integrated with PostgreSQL database.
 # Architecture
 The application will be constructed using the following architecture:
