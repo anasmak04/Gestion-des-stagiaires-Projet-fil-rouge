@@ -8,5 +8,5 @@
 
 
 
-diagramme de cas d'utilisation : https://lucid.app/lucidchart/e25ab614-e8bb-4aee-a689-ee20393c5a0f/edit?beaconFlowId=B8709A76AB757594&invitationId=inv_72e13246-b541-4865-9fc7-39e59b772929&page=0_0#
+diagramme de cas d'utilisation :https://lucid.app/lucidchart/e25ab614-e8bb-4aee-a689-ee20393c5a0f/edit?beaconFlowId=B8709A76AB757594&invitationId=inv_72e13246-b541-4865-9fc7-39e59b772929&page=0_0#
 diagramme de classe : https://lucid.app/lucidchart/ed600c46-421f-40ec-bdc8-c97943d46676/edit?beaconFlowId=B4083EBD41999269&invitationId=inv_69c830e6-1a1e-4c23-a0f1-8690e3050e53&page=0_0#
