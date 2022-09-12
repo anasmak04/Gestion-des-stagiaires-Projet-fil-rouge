@@ -1,5 +1,22 @@
 .btns{
     display: flex;
     padding: 12px;
+ gap: 12px;
 
+
+}
+
+td img{
+    width: 30px;
+}
+
+button{
+    border: none;
+    background-color: white;
+}
+
+table{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 12px;
 }

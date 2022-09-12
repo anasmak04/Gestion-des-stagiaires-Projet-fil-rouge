@@ -21,7 +21,7 @@ import { FilieresComponent } from './filieres/filieres.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
