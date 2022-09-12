@@ -16,7 +16,13 @@ button{
 }
 
 table{
-    width: 80%;
-    margin-left: 10%;
+    width: 75%;
+    margin-left: 15%;
     margin-top: 12px;
+}
+
+.div{
+display: flex;
+justify-content: center;
+margin-bottom: 60px;
 }
