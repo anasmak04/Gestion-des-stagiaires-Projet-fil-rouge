@@ -9,6 +9,7 @@ import { StagiairesComponent } from './stagiaires/stagiaires.component';
 import { HomeComponent } from './home/home.component';
 import { FilieresComponent } from './filieres/filieres.component';
 import { EditerComponent } from './editer/editer.component';
+import { AddStagiaireComponent } from './add-stagiaire/add-stagiaire.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { EditerComponent } from './editer/editer.component';
     StagiairesComponent,
     HomeComponent,
     FilieresComponent,
-    EditerComponent
+    EditerComponent,
+    AddStagiaireComponent
   ],
   imports: [
     BrowserModule,

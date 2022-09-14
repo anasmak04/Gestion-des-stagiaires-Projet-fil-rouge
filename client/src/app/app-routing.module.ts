@@ -5,11 +5,13 @@ import { StagiairesComponent } from './stagiaires/stagiaires.component';
 import { HomeComponent } from './home/home.component';
 import { FilieresComponent } from './filieres/filieres.component';
 import { EditerComponent } from './editer/editer.component';
+import { AddStagiaireComponent } from './add-stagiaire/add-stagiaire.component';
 
 const routes: Routes = [
   { path: '', component: StagiairesComponent  },
   { path: 'filieres', component: FilieresComponent  },
   { path: 'Edite', component: EditerComponent  },
+  { path: 'AddStagiaire', component: AddStagiaireComponent  },
 ];
 
 
