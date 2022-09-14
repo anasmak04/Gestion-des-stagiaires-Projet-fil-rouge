@@ -40,17 +40,17 @@ table{
 
 .form-select{
     width: 20%;
-    height: 50px;
+    height: 40px;
 }
 
 .input-group{
     width: 36%;
-    height: 50px;
+    height: 40px;
 
 }
 
 .btn{
-    height: 50px;
+    height: 40px;
     background-color: gray;
     margin-left: 20px;
 }
@@ -62,5 +62,5 @@ table{
 
 .link-primary{
     text-decoration: none;
-    margin-top: 12px;
+    margin-top: 8px;
 }
