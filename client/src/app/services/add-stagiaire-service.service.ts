@@ -1,9 +1,14 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AddStagiaireServiceService {
+  API = 'http://localhost:3000/stagiaires';
+  constructor(private httpclient: HttpClient) {}
 
-  constructor() { }
+  getStagiaire() {
+    return this.httpclient.get(this.API);
+  }
 }

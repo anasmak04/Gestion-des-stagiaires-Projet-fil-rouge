@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AddStagiaireServiceService } from '../services/add-stagiaire-service.service';
 
 @Component({
   selector: 'app-add-stagiaire',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-stagiaire.component.css']
 })
 export class AddStagiaireComponent implements OnInit {
-
+  List:any=[];
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
+ 
 
 }

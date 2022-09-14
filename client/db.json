@@ -1,0 +1,19 @@
+{
+    "stagiaires" : [
+        {
+            "id" : 1,
+            "nom" : "anas",
+            "prenom" : "elmakhloufi",
+            "filiere" : "TSDI",
+            "photo" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDJP1wbyGV9xQvRrPHKLAJ_C8MTzPeIDPwW_Ut8Po&s"
+        },
+
+        {
+            "id" : 2,
+            "nom" : "anas",
+            "prenom" : "elmakhloufi",
+            "filiere" : "TSDI",
+            "photo" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDJP1wbyGV9xQvRrPHKLAJ_C8MTzPeIDPwW_Ut8Po&s"
+        }
+    ]
+}

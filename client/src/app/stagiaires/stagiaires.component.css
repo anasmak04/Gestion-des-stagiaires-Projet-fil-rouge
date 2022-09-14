@@ -63,3 +63,11 @@ table{
     text-decoration: none;
     margin-top: 8px;
 }
+
+.alert {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 12px;
+  }
