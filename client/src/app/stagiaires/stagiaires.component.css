@@ -24,5 +24,33 @@ table{
 .div{
 display: flex;
 justify-content: center;
+align-items: center;
 margin-bottom: 60px;
+}
+
+.form-select{
+    width: 25%;
+    cursor: pointer;
+    height: 43px;
+
+}
+
+.input-group{
+    width: 40%;
+    height: 43px;
+}
+
+.btn{
+    height: 43px;
+    border: 2px solid orange;
+}
+
+.bg-light{
+    display: flex;
+    gap: 12px;
+}
+
+.link-primary{
+text-decoration: none;
+padding-top: 10px;
 }
