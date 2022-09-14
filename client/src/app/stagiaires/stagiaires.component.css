@@ -1,9 +1,7 @@
 .btns{
     display: flex;
     padding: 12px;
- gap: 12px;
-
-
+    gap: 12px;
 }
 
 td img{
@@ -21,36 +19,20 @@ table{
     margin-top: 12px;
 }
 
-.div{
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 60px;
+
+
+
+
+
+
+
+
+.panel{
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 12px;
 }
 
-.form-select{
-    width: 25%;
-    cursor: pointer;
-    height: 43px;
-
-}
-
-.input-group{
-    width: 40%;
-    height: 43px;
-}
-
-.btn{
-    height: 43px;
-    border: 2px solid orange;
-}
-
-.bg-light{
+.panel-body{
     display: flex;
-    gap: 12px;
-}
-
-.link-primary{
-text-decoration: none;
-padding-top: 10px;
 }
