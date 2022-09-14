@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { StagiairesComponent } from './stagiaires/stagiaires.component';
 import { HomeComponent } from './home/home.component';
 import { FilieresComponent } from './filieres/filieres.component';
+import { EditerComponent } from './editer/editer.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FilieresComponent } from './filieres/filieres.component';
     HeaderComponent,
     StagiairesComponent,
     HomeComponent,
-    FilieresComponent
+    FilieresComponent,
+    EditerComponent
   ],
   imports: [
     BrowserModule,

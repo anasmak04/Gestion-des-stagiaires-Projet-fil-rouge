@@ -4,11 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { StagiairesComponent } from './stagiaires/stagiaires.component';
 import { HomeComponent } from './home/home.component';
 import { FilieresComponent } from './filieres/filieres.component';
+import { EditerComponent } from './editer/editer.component';
 
 const routes: Routes = [
-  { path: '', component:  HomeComponent},
-  { path: 'stagiaires', component: StagiairesComponent  },
+  { path: '', component: StagiairesComponent  },
   { path: 'filieres', component: FilieresComponent  },
+  { path: 'Edite', component: EditerComponent  },
 ];
 
 
