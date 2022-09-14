@@ -14,17 +14,10 @@ button{
 }
 
 table{
-    width: 75%;
+    /* width: 75%;
     margin-left: 15%;
-    margin-top: 12px;
+    margin-top: 12px; */
 }
-
-
-
-
-
-
-
 
 
 .panel{
@@ -35,4 +28,39 @@ table{
 
 .panel-body{
     display: flex;
+}
+
+.card{
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+
+.form-select{
+    width: 20%;
+    height: 50px;
+}
+
+.input-group{
+    width: 36%;
+    height: 50px;
+
+}
+
+.btn{
+    height: 50px;
+    background-color: gray;
+    margin-left: 20px;
+}
+
+.card-body{
+    display: flex;
+    gap: 30px;
+}
+
+.link-primary{
+    text-decoration: none;
+    margin-top: 12px;
 }
