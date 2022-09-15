@@ -9,6 +9,7 @@ import { DeleteStagiaireService } from '../services/delete-stagiaire.service';
 })
 export class StagiairesComponent implements OnInit {
   List: any = [];
+  searchText:any;
   constructor(private data: AddStagiaireServiceService, 
     private dataDelete : DeleteStagiaireService) {}
 

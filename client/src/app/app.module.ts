@@ -13,10 +13,12 @@ import { AddStagiaireComponent } from './add-stagiaire/add-stagiaire.component';
 import { AddFiliereComponent } from './add-filiere/add-filiere.component';
 import { EditFiliereComponent } from './edit-filiere/edit-filiere.component';
 import {FormsModule} from '@angular/forms'
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     HeaderComponent,
     StagiairesComponent,
@@ -25,13 +27,16 @@ import {FormsModule} from '@angular/forms'
     EditerComponent,
     AddStagiaireComponent,
     AddFiliereComponent,
-    EditFiliereComponent
+    EditFiliereComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

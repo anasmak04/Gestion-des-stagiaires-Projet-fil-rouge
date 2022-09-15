@@ -15,6 +15,8 @@
         placeholder="search's by name or username"
         aria-label="Recipient's username"
         aria-describedby="basic-addon2"
+        name="search" 
+        [(ngModel)]="searchText"
       />
       <div class="input-group-append">
         <button type="button" class="btn btn-light">Rechercher</button>
@@ -42,7 +44,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let user of List">
+        <tr *ngFor="let user of List | filter:searchText">
           <th>{{user.id}}</th>
           <td>{{user.nom}}</td>
           <td>{{user.prenom}}</td>

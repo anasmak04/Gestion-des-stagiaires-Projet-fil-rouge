@@ -20,6 +20,13 @@
       "prenom": "dbaa",
       "filiere": "TSDI",
       "photo": "C:\\fakepath\\Apache_Tomcat_logo.svg.png"
+    },
+    {
+      "id": 100,
+      "nom": "mohamed",
+      "prenom": "idbrahim",
+      "filiere": "TSDI",
+      "photo": "C:\\fakepath\\spring.png"
     }
   ]
 }
