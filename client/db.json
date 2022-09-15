@@ -48,6 +48,13 @@
       "prenom": "ihoum",
       "filiere": "TRI",
       "photo": "C:\\fakepath\\js.png"
+    },
+    {
+      "id": 10,
+      "nom": "atmane",
+      "prenom": "benaali",
+      "filiere": "TSGE",
+      "photo": "C:\\fakepath\\css3.png"
     }
   ],
   "Filieres": [

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AddStagiaireServiceService } from '../services/add-stagiaire-service.service';
 
 @Component({
@@ -15,7 +16,8 @@ export class AddStagiaireComponent implements OnInit {
     filiere: '',
     photo: '',
   };
-  constructor(private dataADD: AddStagiaireServiceService) {}
+  constructor(private dataADD: AddStagiaireServiceService,
+    private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -23,7 +25,7 @@ export class AddStagiaireComponent implements OnInit {
     this.dataADD.PostStagiaire(this.stagiaire).subscribe((item) => {
       this.List = [item, ...this.List]
       this.EmptyInput();
-      console.log("Ss")
+      this.router.navigate([''])
     })
 
   }

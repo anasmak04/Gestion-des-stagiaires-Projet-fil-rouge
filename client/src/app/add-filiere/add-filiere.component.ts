@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AddfiliereService } from '../services/addfiliere.service';
 
 @Component({
@@ -15,7 +16,8 @@ export class AddFiliereComponent implements OnInit {
   }
   List: any = [];
       
-  constructor(private AddF : AddfiliereService) { }
+  constructor(private AddF : AddfiliereService,
+    private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +27,7 @@ export class AddFiliereComponent implements OnInit {
     this.AddF.AddFiliere(this.Filieres).subscribe((item) => {
       this.List = [item,...this.List]
       this.EmptyInput();
+      this.router.navigate(["filieres"])
     })
   }
 
