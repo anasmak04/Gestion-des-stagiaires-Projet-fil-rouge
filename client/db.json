@@ -41,6 +41,13 @@
       "prenom": "ouddor",
       "filiere": "LICENCE",
       "photo": "C:\\fakepath\\css3.png"
+    },
+    {
+      "id": 9,
+      "nom": "mustapha",
+      "prenom": "ihoum",
+      "filiere": "TRI",
+      "photo": "C:\\fakepath\\js.png"
     }
   ],
   "Filieres": [

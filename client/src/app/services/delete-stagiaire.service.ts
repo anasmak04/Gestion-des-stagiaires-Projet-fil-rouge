@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { InterfaceStagiaire } from '../models/interface-stagiaire';
 
 @Injectable({
   providedIn: 'root',
@@ -9,6 +10,6 @@ export class DeleteStagiaireService {
   constructor(private httpclient: HttpClient) {}
 
   Delete(id: number) {
-    return this.httpclient.delete(`${this.API}/${id}`);
+    return this.httpclient.delete<InterfaceStagiaire>(`${this.API}/${id}`);
   }
 }

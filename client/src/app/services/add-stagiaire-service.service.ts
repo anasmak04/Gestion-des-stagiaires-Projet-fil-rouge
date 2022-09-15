@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { InterfaceStagiaire } from '../models/interface-stagiaire';
 
 @Injectable({
   providedIn: 'root',
@@ -13,7 +14,7 @@ export class AddStagiaireServiceService {
   }
 
   PostStagiaire(stagiaires:any){
-    return this.httpclient.post(this.API,stagiaires)
+    return this.httpclient.post<InterfaceStagiaire>(this.API,stagiaires)
   }
 
   

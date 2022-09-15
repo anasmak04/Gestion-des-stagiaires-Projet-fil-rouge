@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { InterfaceFiliere } from '../models/interface-filiere';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class AddfiliereService {
    }
 
    Get(){
-    return this.httpclient.get(this.API);
+    return this.httpclient.get<InterfaceFiliere>(this.API);
    }
 
    AddFiliere(Filieres :any){
