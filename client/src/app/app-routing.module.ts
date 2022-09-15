@@ -8,6 +8,7 @@ import { EditerComponent } from './editer/editer.component';
 import { AddStagiaireComponent } from './add-stagiaire/add-stagiaire.component';
 import { AddFiliereComponent } from './add-filiere/add-filiere.component';
 import { EditFiliereComponent } from './edit-filiere/edit-filiere.component';
+import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 
 const routes: Routes = [
   { path: '', component: StagiairesComponent  },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'AddStagiaire', component: AddStagiaireComponent  },
   { path: 'AddFiliere', component: AddFiliereComponent  },
   { path: 'editFiliere', component: EditFiliereComponent  },
+  { path: 'utilisateur', component: UtilisateurComponent  },
 ];
 
 
