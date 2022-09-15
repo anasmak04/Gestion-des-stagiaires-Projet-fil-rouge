@@ -80,3 +80,7 @@ table{
     padding-top: 8px;
   }
   
+
+  th{
+    text-transform: uppercase;
+  }

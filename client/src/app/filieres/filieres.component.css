@@ -76,3 +76,7 @@ svg{
     display: block;
     margin-top: 12px;
   }
+
+  th{
+    text-transform: uppercase;
+  }
