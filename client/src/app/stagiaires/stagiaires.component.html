@@ -2,13 +2,13 @@
   <div class="card-header">Rechercher des stagiaires</div>
 
   <div class="card-body">
+    <label for="">search by Filiere</label>
     <select
           class="form-select"
           [(ngModel)]="searchText"
           aria-label="Default select example"
-          aria-placeholder="aaa"
         >
-          <option selected>Rechercher Les Filieres</option>
+          <option value="" disabled selected hidden>Rechercher Les Filieres</option>
           <option value="TSDI">TSDI</option>
           <option value="TRI">TRI</option>
           <option value="TSGE">TSGE</option>
@@ -25,9 +25,7 @@
         name="search" 
         [(ngModel)]="searchText"
       />
-      <div class="input-group-append">
-        <button type="button" class="btn btn-light">Rechercher</button>
-      </div>
+    
     </div>
     <a href="/AddStagiaire" routerLink="AddStagiaire" class="link-primary"
       >Nouveau stagiaire</a

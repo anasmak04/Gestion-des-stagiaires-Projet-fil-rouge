@@ -75,3 +75,8 @@ table{
   svg{
     cursor: pointer;
   }
+
+  label{
+    padding-top: 8px;
+  }
+  
