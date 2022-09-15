@@ -19,11 +19,16 @@ export class AddStagiaireComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  Post() {
+  PostSta() {
     this.dataADD.PostStagiaire(this.stagiaire).subscribe((item) => {
       this.List = [item, ...this.List]
+      this.EmptyInput();
+      console.log("Ss")
     })
 
   }
-  
+
+  EmptyInput(){
+    this.stagiaire = "";
+  }
 }
