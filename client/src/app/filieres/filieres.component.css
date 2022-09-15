@@ -67,3 +67,12 @@ table{
 svg{
     cursor: pointer;
 }
+
+
+.alert {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 12px;
+  }

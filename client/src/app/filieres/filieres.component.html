@@ -1,4 +1,4 @@
- <div class="card">
+ <div class="card" >
     <div class="card-header">
      Rechercher des Filieres
     </div>
@@ -26,14 +26,14 @@
   
   
     
-    <div class="card">
+    <div class="card" *ngIf="List.length > 0">
       <div class="card-header">
       List des stagiaires
       </div>
     
       <div class="card-body">
    
-        <table class="table">
+        <table  class="table">
           <thead class="thead-dark">
             <tr>
               <th scope="col">id</th>
@@ -68,3 +68,7 @@
         </table>
       </div>
     </div>
+
+    <div *ngIf="List.length == 0" class="alert alert-secondary" role="alert">
+      Dosen't exist any stagiaire pour l'instant
+     </div>
