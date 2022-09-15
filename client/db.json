@@ -15,28 +15,11 @@
       "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDJP1wbyGV9xQvRrPHKLAJ_C8MTzPeIDPwW_Ut8Po&s"
     },
     {
-      "id": 3,
-      "nom": "",
-      "prenom": "",
-      "filiere": "",
-      "photo": ""
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5,
-      "nom": "",
-      "prenom": "",
-      "filiere": "",
-      "photo": ""
-    },
-    {
-      "id": 22,
-      "nom": "aa",
-      "prenom": "aaa",
-      "filiere": "3",
-      "photo": "C:\\fakepath\\js.png"
+      "id": 101,
+      "nom": "omar",
+      "prenom": "dbaa",
+      "filiere": "TSDI",
+      "photo": "C:\\fakepath\\Apache_Tomcat_logo.svg.png"
     }
   ]
 }
