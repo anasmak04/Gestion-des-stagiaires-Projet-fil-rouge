@@ -53,16 +53,6 @@
       "id": 2,
       "nom": "TSRI",
       "niveau": "TS"
-    },
-    {
-      "id": 3,
-      "nom": "TSGE",
-      "niveau": "TS"
-    },
-    {
-      "id": 22,
-      "nom": "TRAAS",
-      "niveau": "TSGE"
     }
   ]
 }

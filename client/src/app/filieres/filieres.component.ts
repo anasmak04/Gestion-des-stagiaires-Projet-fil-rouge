@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AddfiliereService } from '../services/addfiliere.service';
+import { DeleteFiliereService } from '../services/delete-filiere.service';
 
 @Component({
   selector: 'app-filieres',
@@ -8,7 +9,8 @@ import { AddfiliereService } from '../services/addfiliere.service';
 })
 export class FilieresComponent implements OnInit {
   List:any=[];
-  constructor(private dataF : AddfiliereService) { }
+  constructor(private dataF : AddfiliereService,
+    private dataDelete : DeleteFiliereService) { }
 
   ngOnInit(): void {
     this.GetFiliere();
@@ -18,6 +20,13 @@ export class FilieresComponent implements OnInit {
   GetFiliere(){
     this.dataF.Get().subscribe((result) => {
       this.List = result;
+    })
+  }
+
+
+  DeleteFiliere(id :number){
+    this.dataDelete.DeleteMethod(id).subscribe(() => {
+      this.List = this.List.filter((item :{id:number}) => item.id !== id)
     })
   }
 }
