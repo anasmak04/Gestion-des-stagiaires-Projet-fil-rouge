@@ -23,3 +23,7 @@ button{
 svg{
     margin: 3px;
 }
+
+td,th{
+    text-align: center;
+}
