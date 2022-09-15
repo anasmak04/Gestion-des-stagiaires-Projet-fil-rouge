@@ -13,4 +13,10 @@ export class AddfiliereService {
    Get(){
     return this.httpclient.get(this.API);
    }
+
+   AddFiliere(Filieres :any){
+    return this.httpclient.post(this.API,Filieres)
+   }
+
+
 }
