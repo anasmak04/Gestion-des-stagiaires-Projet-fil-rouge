@@ -42,5 +42,26 @@
       "filiere": "LICENCE",
       "photo": "C:\\fakepath\\css3.png"
     }
+  ],
+
+  "Filieres" : [
+    {
+      "id" : 1,
+      "nom" : "TSDI",
+      "niveau" : "TS"
+    },
+
+    {
+      "id" : 2,
+      "nom" : "TSRI",
+      "niveau" : "TS"
+    },
+
+
+    {
+      "id" : 3,
+      "nom" : "TSGE",
+      "niveau" : "TS"
+    }
   ]
 }
