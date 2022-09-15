@@ -10,7 +10,9 @@ export class StagiairesComponent implements OnInit {
   List: any = [];
   constructor(private data: AddStagiaireServiceService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.Get();
+  }
 
   Get() {
     this.data.getStagiaire().subscribe((result) => {
