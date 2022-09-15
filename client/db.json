@@ -43,5 +43,21 @@
       "photo": "C:\\fakepath\\css3.png"
     }
   ],
-  "Filieres": []
+  "Filieres": [
+    {
+      "id": 1,
+      "nom": "TSRI",
+      "niveau": "TRI"
+    },
+    {
+      "id": 2,
+      "nom": "TSGE",
+      "niveau": "TS"
+    },
+    {
+      "id": 3,
+      "nom": "TSDI",
+      "niveau": "Q"
+    }
+  ]
 }

@@ -9,6 +9,7 @@ import { DeleteFiliereService } from '../services/delete-filiere.service';
 })
 export class FilieresComponent implements OnInit {
   List:any=[];
+  searchText:any;
   constructor(private dataF : AddfiliereService,
     private dataDelete : DeleteFiliereService) { }
 
