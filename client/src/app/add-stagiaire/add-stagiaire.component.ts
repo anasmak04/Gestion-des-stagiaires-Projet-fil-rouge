@@ -4,16 +4,26 @@ import { AddStagiaireServiceService } from '../services/add-stagiaire-service.se
 @Component({
   selector: 'app-add-stagiaire',
   templateUrl: './add-stagiaire.component.html',
-  styleUrls: ['./add-stagiaire.component.css']
+  styleUrls: ['./add-stagiaire.component.css'],
 })
 export class AddStagiaireComponent implements OnInit {
-  List:any=[];
-  constructor() { }
+  List: any = [];
+  stagiaire: any = {
+    id: '',
+    nom: '',
+    prenom: '',
+    filiere: '',
+    photo: '',
+  };
+  constructor(private dataADD: AddStagiaireServiceService) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  Post() {
+    this.dataADD.PostStagiaire(this.stagiaire).subscribe((item) => {
+      this.List = [item, ...this.List]
+    })
+
   }
-
-
- 
-
+  
 }

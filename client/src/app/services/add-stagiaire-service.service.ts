@@ -11,4 +11,10 @@ export class AddStagiaireServiceService {
   getStagiaire() {
     return this.httpclient.get(this.API);
   }
+
+  PostStagiaire(stagiaires:any){
+    return this.httpclient.post(this.API,stagiaires)
+  }
+
+  
 }

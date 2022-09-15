@@ -12,6 +12,7 @@ import { EditerComponent } from './editer/editer.component';
 import { AddStagiaireComponent } from './add-stagiaire/add-stagiaire.component';
 import { AddFiliereComponent } from './add-filiere/add-filiere.component';
 import { EditFiliereComponent } from './edit-filiere/edit-filiere.component';
+import {FormsModule} from '@angular/forms'
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { EditFiliereComponent } from './edit-filiere/edit-filiere.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

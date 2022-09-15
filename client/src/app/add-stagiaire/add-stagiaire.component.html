@@ -4,12 +4,27 @@
     <div class="card-body">
       <form>
         <div class="form-group">
-          <label for="exampleFormControlInput1">Nom</label>
+          <label for="exampleFormControlInput1">id</label>
+          <input
+            type="number"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="le nom"
+            name="id"
+            [(ngModel)]="stagiaire.id"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleFormControlInput1">nom</label>
           <input
             type="text"
             class="form-control"
             id="exampleFormControlInput1"
-            placeholder="le nom"
+            placeholder="le Prenom"
+            name="nom"
+            [(ngModel)]="stagiaire.nom"
+
           />
         </div>
   
@@ -19,34 +34,30 @@
             type="text"
             class="form-control"
             id="exampleFormControlInput1"
-            placeholder="le Prenom"
-          />
-        </div>
-  
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Nom</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
             placeholder="le nom"
+            name="prenom"
+            [(ngModel)]="stagiaire.prenom"
+
           />
         </div>
   
         <div class="form-group">
           <label for="">Filere</label>
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select"             [(ngModel)]="stagiaire.filiere"
+          name="filiere" aria-label="Default select example">
             <option selected>Les Filieres</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">TSDI</option>
+            <option value="2">TRI</option>
+            <option value="3">TSGE</option>
+            <option value="3">MASTER</option>
+            <option value="3">LICENCE</option>
           </select>
         </div>
         <div class="form-group">
           <label for="">Image</label>
-          <input class="form-control" type="file" id="myFile" name="filename" />
+          <input   [(ngModel)]="stagiaire.photo"  name="photo" class="form-control" type="file" id="myFile" name="filename" />
         </div>
-        <button type="button" class="btn btn-light">Enregistrer</button>
+        <button (click)="Post()" type="button" class="btn btn-light">Enregistrer</button>
       </form>
     </div>
   </div>
