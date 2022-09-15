@@ -31,4 +31,9 @@ export class AddStagiaireComponent implements OnInit {
   EmptyInput(){
     this.stagiaire = "";
   }
+
+
+  log(a:any){
+    console.log(a)
+  }
 }
