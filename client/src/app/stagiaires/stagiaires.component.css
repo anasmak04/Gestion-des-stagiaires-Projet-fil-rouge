@@ -71,3 +71,7 @@ table{
     display: block;
     margin-top: 12px;
   }
+
+  img{
+    cursor: pointer;
+  }
