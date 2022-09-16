@@ -3,6 +3,7 @@
 
   <div class="card-body">
     <form>
+
       <div class="form-group">
         <label for="exampleFormControlInput1">id</label>
         <input
@@ -80,6 +81,17 @@
           id="myFile"
         />
       </div>
+
+      <div class="form-group">
+        <label for="file">File</label>
+        <input 
+            id="file" 
+            type="file" 
+            class="form-control"
+            (change)="($event)">
+
+    </div>
+
       <button (click)="PostSta()" type="button" class="btn btn-light">
         Enregistrer
       </button>
