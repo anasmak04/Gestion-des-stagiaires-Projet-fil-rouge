@@ -8,8 +8,8 @@ import { InterfaceFiliere } from '../models/interface-filiere';
 export class AddfiliereService {
   API = 'http://localhost:3000/Filieres';
   constructor(private httpclient : HttpClient) {
-
    }
+   
   
 
    Get(){

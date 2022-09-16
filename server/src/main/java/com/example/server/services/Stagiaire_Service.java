@@ -4,6 +4,9 @@ import java.util.List;
 
 import com.example.server.entities.Stagiaire;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Stagiaire_Service implements Services_Dao<Stagiaire> {
 
 	@Override
