@@ -7,6 +7,7 @@ import com.example.server.services.Filiere_Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +24,7 @@ public class Filiere_controller {
 	Filiere_Service filiere_service;
 	
 	@GetMapping()
+	@CrossOrigin(origins = "http://localhost:4200")
 	public List<Filiere> getAllFiliere(){
 		return filiere_service.getall();
 	}
