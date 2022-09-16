@@ -60,8 +60,8 @@
   "Filieres": [
     {
       "id": 1,
-      "nom": "TSRI",
-      "niveau": "TRI"
+      "nom": "TSDI",
+      "niveau": "TS"
     },
     {
       "id": 2,
@@ -70,8 +70,8 @@
     },
     {
       "id": 3,
-      "nom": "TSDI",
-      "niveau": "Q"
+      "nom": "TSRI",
+      "niveau": "TS"
     }
   ]
 }
