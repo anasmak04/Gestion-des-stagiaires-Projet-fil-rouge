@@ -13,6 +13,8 @@ export class StagiairesComponent implements OnInit {
   searchSelect:any;
   p: Number = 1;
   count: Number = 5;
+
+
   constructor(private data: AddStagiaireServiceService, 
     private dataDelete : DeleteStagiaireService) {}
 
@@ -28,8 +30,11 @@ export class StagiairesComponent implements OnInit {
   }
 
   DeleteStagiaire(id :number){
-    this.dataDelete.Delete(id).subscribe(() => {
+    this.dataDelete.Deletemethod(id).subscribe(() => {
       this.List = this.List.filter((item:{id:number}) => item.id !== id)
+      console.log("from delete")
     })
   }
+
+ 
 }

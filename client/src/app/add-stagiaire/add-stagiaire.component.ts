@@ -13,7 +13,7 @@ export class AddStagiaireComponent implements OnInit {
     id: '',
     nom: '',
     prenom: '',
-    filiere: '',
+    id_Filiere: '',
     photo: '',
   };
   constructor(private dataADD: AddStagiaireServiceService,
@@ -49,7 +49,5 @@ export class AddStagiaireComponent implements OnInit {
   }
 
 
-  log(a:any){
-    console.log(a)
-  }
+
 }

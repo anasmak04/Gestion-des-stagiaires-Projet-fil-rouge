@@ -6,10 +6,13 @@ import { InterfaceStagiaire } from '../models/interface-stagiaire';
   providedIn: 'root',
 })
 export class DeleteStagiaireService {
-  API = 'http://localhost:3000/stagiaires';
+  API = 'http://localhost:8088/stagiaire';
+  
   constructor(private httpclient: HttpClient) {}
 
-  Delete(id: number) {
+  Deletemethod(id: number) {
     return this.httpclient.delete<InterfaceStagiaire>(`${this.API}/${id}`);
   }
+
+  
 }
