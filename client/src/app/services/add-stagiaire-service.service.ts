@@ -6,15 +6,15 @@ import { InterfaceStagiaire } from '../models/interface-stagiaire';
   providedIn: 'root',
 })
 export class AddStagiaireServiceService {
-  API = 'http://localhost:3000/stagiaires';
+  API = 'http://localhost:8088/stagiaire';
   constructor(private httpclient: HttpClient) {}
 
   getStagiaire() {
     return this.httpclient.get(this.API);
   }
 
-  PostStagiaire(stagiaires:any){
-    return this.httpclient.post<InterfaceStagiaire>(this.API,stagiaires)
+  PostStagiaire(stagiaire:any){
+    return this.httpclient.post<InterfaceStagiaire>(this.API,stagiaire)
   }
 
   
