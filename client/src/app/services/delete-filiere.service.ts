@@ -6,12 +6,12 @@ import { InterfaceFiliere } from '../models/interface-filiere';
   providedIn: 'root',
 })
 export class DeleteFiliereService {
-  API = 'http://localhost:3000/Filieres';
+  API = 'http://localhost:8088/filiere';
 
   constructor(private httpclient: HttpClient) {}
 
-  DeleteMethod(id: number) {
-    return this.httpclient.delete<InterfaceFiliere>(`${this.API}/${id}`);
+  DeleteMethod(id_Filiere: number) {
+    return this.httpclient.delete<InterfaceFiliere>(`${this.API}/${id_Filiere}`);
   }
 
   

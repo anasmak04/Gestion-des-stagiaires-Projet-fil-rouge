@@ -25,9 +25,9 @@ export class FilieresComponent implements OnInit {
   }
 
 
-  DeleteFiliere(id :number){
-    this.dataDelete.DeleteMethod(id).subscribe(() => {
-      this.List = this.List.filter((item :{id:number}) => item.id !== id)
+  DeleteFiliere(id_Filiere :number){
+    this.dataDelete.DeleteMethod(id_Filiere).subscribe(() => {
+      this.List = this.List.filter((item :{id_Filiere:number}) => item.id_Filiere !== id_Filiere)
     })
   }
 }
