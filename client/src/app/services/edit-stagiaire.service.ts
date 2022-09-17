@@ -5,13 +5,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EditStagiaireService {
-  API = 'http://localhost:3000/stagiaires';
+  API = 'http://localhost:8088/stagiaire';
   id:any;
   constructor(private httpclient : HttpClient) { 
 
   }
 
-  Update(stagiaires:any){
-    return  this.httpclient.put(`${this.httpclient}/${this.id}`,stagiaires)
+  Update(stagiaire:any){
+    return  this.httpclient.put(`${this.httpclient}/${this.id}`,stagiaire)
   }
+  
 }

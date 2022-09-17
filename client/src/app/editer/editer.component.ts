@@ -12,7 +12,9 @@ export class EditerComponent implements OnInit {
     id: '',
     nom: '',
     prenom: '',
-    filiere: '',
+    filiere : {
+      id_Filiere: '',
+  },
     photo: '',
   };
   Condition = false;

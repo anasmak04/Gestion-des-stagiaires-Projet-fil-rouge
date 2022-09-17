@@ -18,6 +18,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { UtilisateurComponent } from './utilisateur/utilisateur.component';
     AddFiliereComponent,
     EditFiliereComponent,
     UtilisateurComponent,
+    LoginComponent,
     
     
     
