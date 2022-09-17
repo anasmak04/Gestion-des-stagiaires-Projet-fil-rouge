@@ -13,7 +13,9 @@ export class AddStagiaireComponent implements OnInit {
     id: '',
     nom: '',
     prenom: '',
-    id_Filiere: '',
+    filiere : {
+      id_Filiere: '',
+  },
     photo: '',
   };
   constructor(private dataADD: AddStagiaireServiceService,
@@ -30,24 +32,21 @@ export class AddStagiaireComponent implements OnInit {
       });
     }
   }
+
   PostSta() {
     const dataADD = new FormData();
     // dataADD.append('file', this.stagiaire.photo?.value);
     dataADD.append('file', 'assets/5907.jpg');
     console.log(dataADD);
-  
     this.dataADD.PostStagiaire(this.stagiaire).subscribe((item) => {
       this.List = [item, ...this.List]
       this.EmptyInput();
       this.router.navigate([''])
     })
-
   }
 
   EmptyInput(){
     this.stagiaire = "";
   }
-
-
 
 }

@@ -35,6 +35,5 @@ export class StagiairesComponent implements OnInit {
       console.log("from delete")
     })
   }
-
- 
+  
 }

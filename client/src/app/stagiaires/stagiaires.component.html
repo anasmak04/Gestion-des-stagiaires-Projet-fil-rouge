@@ -2,19 +2,17 @@
   <div class="card-header">Rechercher des stagiaires</div>
 
   <div class="card-body">
-    <label for="">search by Filiere</label>
-    <select
-          class="form-select"
-          [(ngModel)]="searchText"
-          aria-label="Default select example"
-        >
-          <option value="" disabled selected hidden>Rechercher Les Filieres</option>
-          <option value="TSDI">TSDI</option>
-          <option value="TRI">TRI</option>
-          <option value="TSGE">TSGE</option>
-          <option value="MASTER">MASTER</option>
-          <option value="LICENCE">LICENCE</option>
-        </select>
+    <div class="form-group">
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        [(ngModel)]="searchText"
+        placeholder="taper un mots-clés"
+      />
+    </div>
+
     <div class="input-group mb-3">
       <input
         type="text"
@@ -22,10 +20,9 @@
         placeholder="search's by name or other"
         aria-label="Recipient's username"
         aria-describedby="basic-addon2"
-        name="search" 
+        name="search"
         [(ngModel)]="searchText"
       />
-    
     </div>
     <a href="/AddStagiaire" routerLink="AddStagiaire" class="link-primary"
       >Nouveau stagiaire</a
@@ -37,7 +34,7 @@
   <div class="card-header">List des stagiaires</div>
 
   <div class="card-body">
-    <table class="table" >
+    <table class="table">
       <thead class="thead-dark">
         <tr>
           <th scope="col">id</th>
@@ -49,12 +46,12 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let user of List | filter:searchText">
-          <td>{{user.id}}</td>
-          <td>{{user.nom}}</td>
-          <td>{{user.prenom}}</td>
-          <td>{{user.filiere.id_Filiere}}</td>
-          <td><img src={{user.photo}} alt="image"></td> 
+        <tr *ngFor="let user of List | filter: searchText">
+          <td>{{ user.id }}</td>
+          <td>{{ user.nom }}</td>
+          <td>{{ user.prenom }}</td>
+          <td>{{ user.filiere.id_Filiere }}</td>
+          <td><img src="{{ user.photo }}" alt="image" /></td>
           <td class="btns">
             <a href="/editer" routerLink="Edite">
               <svg
@@ -70,7 +67,7 @@
                 /></svg
             ></a>
 
-            <a  (click)="DeleteStagiaire(user.id)">
+            <a (click)="DeleteStagiaire(user.id)">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -90,14 +87,11 @@
             </a>
           </td>
         </tr>
-
       </tbody>
-      
     </table>
-    
   </div>
 </div>
 
- <div *ngIf="List.length == 0" class="alert alert-secondary" role="alert">
+<div *ngIf="List.length == 0" class="alert alert-secondary" role="alert">
   Dosen't exist any stagiaire pour l'instant
- </div>
+</div>

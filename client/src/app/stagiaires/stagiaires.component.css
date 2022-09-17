@@ -38,15 +38,10 @@ table{
 }
 
 
-.form-select{
-    width: 27%;
-    height: 40px;
-}
 
 .input-group{
     width: 36%;
     height: 40px;
-
 }
 
 .btn{
@@ -85,5 +80,15 @@ table{
   th{
     text-transform: uppercase;
   }
+ 
+  .input{
+    width:200px;
+    height: 40px;
+}
 
-  
+input{
+    width: 320px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    padding-left: 12px;
+}
