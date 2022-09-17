@@ -10,8 +10,8 @@
             class="form-control"
             id="exampleFormControlInput1"
             placeholder="le nom"
-            name="id"
-            [(ngModel)]="Filieres.id"
+            name="id_Filiere"
+            [(ngModel)]="filiere.id_Filiere"
           />
         </div>
   
@@ -22,8 +22,8 @@
             class="form-control"
             id="exampleFormControlInput1"
             placeholder="le Prenom"
-            name="nom"
-            [(ngModel)]="Filieres.nom"
+            name="filiere"
+            [(ngModel)]="filiere.filiere"
           />
         </div>
   
@@ -32,7 +32,7 @@
         <div class="form-group">
           <label for="">Niveau</label>
           <select       name="niveau"
-          [(ngModel)]="Filieres.niveau" class="form-select" aria-label="Default select example">
+          [(ngModel)]="filiere.niveau" class="form-select" aria-label="Default select example">
           <option value="" disabled selected hidden>Rechercher Les Filieres</option>
             <option value="TS">TS</option>
             <option value="T">T</option>

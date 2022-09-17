@@ -9,7 +9,7 @@ import { AddfiliereService } from '../services/addfiliere.service';
 })
 export class AddFiliereComponent implements OnInit {
 
-  Filieres:any = {
+  filiere:any = {
     id : "",
     nom : "",
     niveau : ""
@@ -24,7 +24,7 @@ export class AddFiliereComponent implements OnInit {
 
 
   PostMethod(){
-    this.AddF.AddFiliere(this.Filieres).subscribe((item) => {
+    this.AddF.AddFiliere(this.filiere).subscribe((item) => {
       this.List = [item,...this.List]
       this.EmptyInput();
       this.router.navigate(["filieres"])
@@ -32,6 +32,6 @@ export class AddFiliereComponent implements OnInit {
   }
 
   EmptyInput(){
-    this.Filieres= "";
+    this.filiere= "";
   }
 }

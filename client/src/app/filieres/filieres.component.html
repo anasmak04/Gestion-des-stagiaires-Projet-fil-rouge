@@ -44,8 +44,8 @@
           </thead>
           <tbody>
             <tr *ngFor="let data of List | filter:searchText">
-              <th >{{data.id}}</th>
-              <td>{{data.nom}}</td>
+              <th >{{data.id_Filiere}}</th>
+              <td>{{data.filiere}}</td>
               <td>{{data.niveau}}</td>
               <td class="btns">
                   <a href="/editFiliere" RouterLink="editFiliere"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">

@@ -6,7 +6,7 @@ import { InterfaceFiliere } from '../models/interface-filiere';
   providedIn: 'root'
 })
 export class AddfiliereService {
-  API = 'http://localhost:3000/Filieres';
+  API = 'http://localhost:8088/filiere';
   constructor(private httpclient : HttpClient) {
    }
    
@@ -16,8 +16,8 @@ export class AddfiliereService {
     return this.httpclient.get<InterfaceFiliere>(this.API);
    }
 
-   AddFiliere(Filieres :any){
-    return this.httpclient.post(this.API,Filieres)
+   AddFiliere(filiere :any){
+    return this.httpclient.post(this.API,filiere)
    }
 
 
