@@ -27,12 +27,14 @@ export class EditerComponent implements OnInit {
   PutMethode(){
     this.dataEdit.Update(this.stagiaire)
     .subscribe((stag) => {
+      console.log(stag)
+      this.EmptyInput();
     })
   }
 
 
-  // EmptyInput(){
-  //   this.stagiaire = "";
-  // }
+  EmptyInput(){
+    this.stagiaire = "";
+  }
 
 }

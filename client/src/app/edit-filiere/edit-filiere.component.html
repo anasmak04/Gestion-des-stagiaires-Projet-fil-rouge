@@ -12,22 +12,28 @@
             class="form-control"
             id="exampleFormControlInput1"
             placeholder="le Prenom"
+            name="nom"
+            [(ngModel)]="filiere.nom"
+
           />
         </div>
   
   
   
+        
+  
         <div class="form-group">
           <label for="">Niveau</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Les Filieres</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+          <select       name="niveau"
+          [(ngModel)]="filiere.niveau" class="form-select" aria-label="Default select example">
+          <option value="" disabled selected hidden>Rechercher Les Filieres</option>
+            <option value="TS">TS</option>
+            <option value="T">T</option>
+            <option value="Q">Q</option>
           </select>
         </div>
    
-        <button type="button" class="btn btn-light">Enregistrer</button>
+        <a routerLink="filieres" (click)="PutMethod()" type="button" class="btn btn-light">Enregistrer</a>
       </form>
     </div>
   </div>

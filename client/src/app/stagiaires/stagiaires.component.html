@@ -7,7 +7,8 @@
       <input type="email"
        class="form-control" 
        id="exampleInputEmail1"
-        aria-describedby="emailHelp"      [(ngModel)]="searchText"
+        aria-describedby="emailHelp"     
+         [(ngModel)]="searchText"
         placeholder="taper un mots-clés">
     </div>
     
@@ -66,7 +67,7 @@
                 /></svg
             ></a>
 
-            <a  (click)="DeleteStagiaire(user.id)">
+            <a   (click)="DeleteStagiaire(user.id)">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
