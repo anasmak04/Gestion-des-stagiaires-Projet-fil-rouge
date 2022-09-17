@@ -11,8 +11,10 @@ export class StagiairesComponent implements OnInit {
   List: any = [];
   searchText:any;
   searchSelect:any;
+
   p: Number = 1;
   count: Number = 5;
+
 
 
   constructor(private data: AddStagiaireServiceService, 
