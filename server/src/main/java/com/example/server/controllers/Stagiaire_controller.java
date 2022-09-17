@@ -53,6 +53,7 @@ public class Stagiaire_controller {
 	
 	
 	@PutMapping({ "/{id}" })
+	@CrossOrigin(origins = "http://localhost:4200")
 	public ResponseEntity<Stagiaire> updateAdmin(@PathVariable("id") Long id, @RequestBody Stagiaire stagiaire) {
 		stagiare_service.update(id, stagiaire);
 		return new ResponseEntity<>(stagiare_service.getById(id), HttpStatus.OK);

@@ -33,11 +33,12 @@ public class Filiere_Service implements Services_Dao<Filiere> {
 	}
 
 	@Override 
-	public void update(Long id_Filiere, Filiere filiere) {
-		Filiere filiere1 = filiere_repository.findById(id_Filiere).get();
+	public void update(Long id, Filiere filiere) {
+		Filiere filiere1 = filiere_repository.findById(id).get();
+		System.out.println(filiere.toString());
 		filiere1.setId_Filiere(filiere.getId_Filiere());
-		filiere1.setFiliere(filiere1.getFiliere());
-		filiere1.setNiveau(filiere1.getNiveau());
+		filiere1.setFiliere(filiere.getFiliere());
+		filiere1.setNiveau(filiere.getNiveau()); 
 		filiere_repository.save(filiere1);
 	}
  

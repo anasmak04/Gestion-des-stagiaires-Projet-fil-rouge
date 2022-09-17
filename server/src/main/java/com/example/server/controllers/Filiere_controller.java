@@ -55,7 +55,8 @@ public class Filiere_controller {
 	}
 	
 	@PutMapping({ "/{id_Filiere}" })
-	public ResponseEntity<Filiere> updateAdmin(@PathVariable("id_Filiere") Long id_Filiere, @RequestBody Filiere filiere) {
+	@CrossOrigin(origins = "http://localhost:4200")
+	public ResponseEntity<Filiere> updateFiliere(@PathVariable("id_Filiere") Long id_Filiere, @RequestBody Filiere filiere) {
 		filiere_service.update(id_Filiere, filiere);
 		return new ResponseEntity<>(filiere_service.getById(id_Filiere), HttpStatus.OK);
 	}
