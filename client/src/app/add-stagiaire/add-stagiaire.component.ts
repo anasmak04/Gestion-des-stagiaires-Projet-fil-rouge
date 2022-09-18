@@ -34,12 +34,13 @@ export class AddStagiaireComponent implements OnInit {
   }
 
   PostSta() {
-    const dataADD = new FormData();
-    // dataADD.append('file', this.stagiaire.photo?.value);
-    dataADD.append('file', 'assets/5907.jpg');
-    console.log(dataADD);
+    // const dataADD = new FormData();
+    // // dataADD.append('file', this.stagiaire.photo?.value);
+    // dataADD.append('file', 'assets/5907.jpg');
+    // console.log(dataADD);
     this.dataADD.PostStagiaire(this.stagiaire).subscribe((item) => {
       this.List = [item, ...this.List]
+      console.log("AAa")
       this.EmptyInput();
       this.router.navigate([''])
     })

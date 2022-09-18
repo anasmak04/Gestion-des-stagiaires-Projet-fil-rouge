@@ -13,9 +13,9 @@ export class AddStagiaireServiceService {
     return this.httpclient.get(this.API);
   }
 
+
   PostStagiaire(stagiaire:any){
-    return this.httpclient.post<InterfaceStagiaire>(this.API,stagiaire)
+    return this.httpclient.post(this.API,stagiaire)
   }
 
-  
 }

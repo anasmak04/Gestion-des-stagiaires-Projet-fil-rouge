@@ -3,7 +3,6 @@
 
   <div class="card-body">
     <form>
-
       <div class="form-group">
         <label for="exampleFormControlInput1">id</label>
         <input
@@ -26,18 +25,14 @@
           name="nom"
           [(ngModel)]="stagiaire.nom"
           required
-          />
+        />
       </div>
       <!-- <div *ngIf="nom.touched && nom.invalid" class="alert alert-danger" role="alert">
         <div *ngIf="nom.errors.required">Ce champ est obligatoire</div>        
       <!-- ce champ est obligatoire   -->
-      <!-- </div> --> 
+      <!-- </div> -->
 
-                <!-- <div *ngIf="nom.errors.minlength">il faut ecrire au moins 3 charachters</div> -->
-
-
-      
-      
+      <!-- <div *ngIf="nom.errors.minlength">il faut ecrire au moins 3 charachters</div> -->
 
       <div class="form-group">
         <label for="exampleFormControlInput1">Prenom</label>
@@ -54,13 +49,13 @@
       <div class="form-group">
         <label for="">Filere</label>
         <input
-        type="number"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="le filiere"
-        [(ngModel)]="stagiaire.filiere.id_Filiere"
-        name="filiere.id_Filiere"
-      />
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="le filiere"
+          [(ngModel)]="stagiaire.filiere.id_Filiere"
+          name="filiere.id_Filiere"
+        />
       </div>
       <div class="form-group">
         <label for="">Image</label>
@@ -73,17 +68,14 @@
         />
       </div>
 
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="file">File</label>
-        <input 
-            id="file" 
-            type="file" 
-            class="form-control"
-            (change)="($event)">
+        <input id="file" type="file" class="form-control" (change)="($event)" />
+      </div> -->
 
-    </div>
-
-      <button (click)="PostSta()" type="button" class="btn btn-light">Enregistrer</button>
+      <button (click)="PostSta()" type="button" class="btn btn-light">
+        Enregistrer
+      </button>
     </form>
   </div>
 </div>

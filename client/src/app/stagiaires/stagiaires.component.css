@@ -20,9 +20,7 @@ table{
 
 }
 
-.table{
-   height: 220px;
-}
+
 
 
 .panel{
@@ -98,6 +96,3 @@ input{
     padding-left: 12px;
 }
 
-.card{
-    margin-bottom: 64px;
-}
