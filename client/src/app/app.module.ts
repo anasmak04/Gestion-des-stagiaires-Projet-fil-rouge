@@ -19,6 +19,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { LoginComponent } from './login/login.component';
+import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { LoginComponent } from './login/login.component';
     EditFiliereComponent,
     UtilisateurComponent,
     LoginComponent,
+    FooterComponent,
     
     
     
@@ -47,7 +50,8 @@ import { LoginComponent } from './login/login.component';
     Ng2SearchPipeModule,
     NgxPaginationModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

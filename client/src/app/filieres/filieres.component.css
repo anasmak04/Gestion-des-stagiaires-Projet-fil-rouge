@@ -80,3 +80,7 @@ svg{
   th{
     text-transform: uppercase;
   }
+
+  .card{
+    margin-bottom: 41px;
+}

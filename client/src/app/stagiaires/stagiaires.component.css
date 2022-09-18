@@ -92,3 +92,7 @@ input{
     border: 1px solid gray;
     padding-left: 12px;
 }
+
+.card{
+    margin-bottom: 64px;
+}
