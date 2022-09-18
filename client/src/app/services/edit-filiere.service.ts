@@ -7,7 +7,6 @@ import { InterfaceFiliere } from '../models/interface-filiere';
 })
 export class EditFiliereService {
 API = "http://localhost:8088/filiere";
-id_Filiere:any;
   constructor(private httpclient : HttpClient) { }
 
 

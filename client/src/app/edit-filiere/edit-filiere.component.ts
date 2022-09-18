@@ -30,4 +30,6 @@ export class EditFiliereComponent implements OnInit {
   Empty() {
     this.filiere = '';
   }
+
+  
 }

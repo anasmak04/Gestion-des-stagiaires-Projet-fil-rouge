@@ -21,7 +21,7 @@
           type="text"
           class="form-control"
           id="exampleFormControlInput1"
-          placeholder="le Prenom"
+          placeholder="Filiere"
           name="filiere"
           [(ngModel)]="filiere.filiere"
         />
@@ -31,7 +31,8 @@
 
       <div class="form-group">
         <label for="">Niveau</label>
-        <select       name="niveau"
+        <select     
+          name="niveau"
         [(ngModel)]="filiere.niveau" class="form-select" aria-label="Default select example">
         <option value="" disabled selected hidden>Rechercher Les Filieres</option>
           <option value="TS">TS</option>
