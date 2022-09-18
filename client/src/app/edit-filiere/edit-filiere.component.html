@@ -1,40 +1,46 @@
 <div class="card">
-    <div class="card-header">Edit  filiere</div>
-  
-    <div class="card-body">
-      <form>
-    
-  
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Nom de la Filiere</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="le Prenom"
-            name="nom"
-            [(ngModel)]="filiere.nom"
+  <div class="card-header">Edit  filiere</div>
 
-          />
-        </div>
-  
-  
-  
-        
-  
-        <div class="form-group">
-          <label for="">Niveau</label>
-          <select       name="niveau"
-          [(ngModel)]="filiere.niveau" class="form-select" aria-label="Default select example">
-          <option value="" disabled selected hidden>Rechercher Les Filieres</option>
-            <option value="TS">TS</option>
-            <option value="T">T</option>
-            <option value="Q">Q</option>
-          </select>
-        </div>
-   
-        <a routerLink="filieres" (click)="PutMethod()" type="button" class="btn btn-light">Enregistrer</a>
-      </form>
-    </div>
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">ID</label>
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="le nom"
+          name="id_Filiere"
+          [(ngModel)]="filiere.id_Filiere"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Nom de la Filiere</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="le Prenom"
+          name="filiere"
+          [(ngModel)]="filiere.filiere"
+        />
+      </div>
+
+
+
+      <div class="form-group">
+        <label for="">Niveau</label>
+        <select       name="niveau"
+        [(ngModel)]="filiere.niveau" class="form-select" aria-label="Default select example">
+        <option value="" disabled selected hidden>Rechercher Les Filieres</option>
+          <option value="TS">TS</option>
+          <option value="T">T</option>
+          <option value="Q">Q</option>
+        </select>
+      </div>
+ 
+      <button  (click)="PutMethod()" type="button" class="btn btn-light">Enregistrer</button>
+    </form>
   </div>
-  
+</div>

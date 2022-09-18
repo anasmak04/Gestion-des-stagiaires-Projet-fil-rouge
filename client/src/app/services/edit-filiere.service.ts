@@ -12,6 +12,7 @@ id_Filiere:any;
 
 
   MethodeUpdate(filiere : any){
-    return this.httpclient.put<InterfaceFiliere>(`${this.API}/${this.id_Filiere}`,filiere)
+    return this.httpclient.put<InterfaceFiliere>(`${this.API}/${filiere.id_Filiere}`,filiere);
   }
+
 }
