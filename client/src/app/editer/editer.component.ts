@@ -30,7 +30,9 @@ export class EditerComponent implements OnInit {
     // this.stagiaire.nom = "hhhh";
     this.route.params.subscribe( params => {
       this.curr_id = params['id']  
+      
   });
+  
   const data = this.dataEdit.getStagi(this.curr_id);
   data.subscribe({
     next: (stagiaire) => 
@@ -44,11 +46,12 @@ export class EditerComponent implements OnInit {
       console.error(e);
     }     
   });
+  
 }
 
   PutMethodee(){
     this.dataEdit.Update(this.stagiaire)
-    .subscribe(stag => {
+    .subscribe((stag) => {
       console.log(stag)
       this.EmptyInput();
       this.router.navigate([''])
