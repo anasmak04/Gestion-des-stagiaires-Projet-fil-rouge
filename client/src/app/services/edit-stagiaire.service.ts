@@ -17,7 +17,7 @@ export class EditStagiaireService {
   }
 
   Update(stagiaire:any){
-    return  this.httpclient.put(`${this.httpclient}/${stagiaire.id}`,stagiaire)
+    return  this.httpclient.put(`${this.API}/${stagiaire.id}`,stagiaire)
   }
   
 }
