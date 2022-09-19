@@ -40,7 +40,7 @@ export class EditerComponent implements OnInit {
     },
     error: (e) => 
     {
-      this.router.navigate(['stagiaire'])
+      this.router.navigate([''])
       console.error(e);
     }     
   });

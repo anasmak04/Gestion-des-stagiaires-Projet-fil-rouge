@@ -14,7 +14,7 @@ import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   { path: '', component: StagiairesComponent  },
   { path: 'filieres', component: FilieresComponent},
-  { path: 'Edite/:id', component: EditerComponent  },
+  { path: 'edit/:id', component: EditerComponent  },
   { path: 'AddStagiaire', component: AddStagiaireComponent  },
   { path: 'filieres/AddFiliere', component: AddFiliereComponent  },
   { path: 'filieres/edit/:id', component: EditFiliereComponent  },
