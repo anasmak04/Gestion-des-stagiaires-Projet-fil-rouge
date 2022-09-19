@@ -13,11 +13,12 @@ import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: '', component: StagiairesComponent  },
-  { path: 'filieres', component: FilieresComponent  },
-  { path: 'Edite', component: EditerComponent  },
+  { path: 'filieres', component: FilieresComponent},
+  { path: 'Edite/:id', component: EditerComponent  },
   { path: 'AddStagiaire', component: AddStagiaireComponent  },
-  { path: 'AddFiliere', component: AddFiliereComponent  },
-  { path: 'editFiliere', component: EditFiliereComponent  },
+  { path: 'filieres/AddFiliere', component: AddFiliereComponent  },
+  { path: 'filieres/edit/:id', component: EditFiliereComponent  },
+  // { path: 'filieres/edit', component: EditFiliereComponent  },
   { path: 'utilisateur', component: UtilisateurComponent  },
   { path: 'login', component: LoginComponent  },
 ];

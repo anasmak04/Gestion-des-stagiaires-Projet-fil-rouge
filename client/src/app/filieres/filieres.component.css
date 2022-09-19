@@ -85,3 +85,7 @@ svg{
   .card{
     margin-bottom: 41px;
 }
+
+a{
+    text-decoration: none;
+}

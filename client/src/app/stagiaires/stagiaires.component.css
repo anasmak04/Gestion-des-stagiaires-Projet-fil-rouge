@@ -99,3 +99,6 @@ input{
     padding-left: 12px;
 }
 
+a{
+    text-decoration: none;
+}
