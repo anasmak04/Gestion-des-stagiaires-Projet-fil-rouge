@@ -15,6 +15,8 @@ import lombok.*;
 public class Stagiaire {
 	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Basic(optional = false)
+	
 	private Long id;
 	private String nom;
 	private String prenom;
