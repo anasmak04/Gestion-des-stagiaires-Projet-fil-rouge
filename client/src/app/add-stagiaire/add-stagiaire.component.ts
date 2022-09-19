@@ -40,7 +40,6 @@ export class AddStagiaireComponent implements OnInit {
     // console.log(dataADD);
     this.dataADD.PostStagiaire(this.stagiaire).subscribe((item) => {
       this.List = [item, ...this.List]
-      console.log("AAa")
       this.EmptyInput();
       this.router.navigate([''])
     })

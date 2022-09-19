@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("filiere")
 public class Filiere_controller {
@@ -28,20 +28,17 @@ public class Filiere_controller {
 	Filiere_Service filiere_service;
 	
 	@GetMapping()
-	@CrossOrigin(origins = "http://localhost:4200")
 	public List<Filiere> getAllFiliere(){
 		return filiere_service.getall();
 	}
 	
 	@GetMapping("/{id_Filiere}")
-	@CrossOrigin(origins = "http://localhost:4200")
 	public Filiere getAllFiliereByID(@PathVariable Long id_Filiere){
 		Filiere filiere = filiere_service.getById(id_Filiere);
 		return filiere;
 	} 
 	
 	@PostMapping()
-	@CrossOrigin(origins = "http://localhost:4200")
 	public Filiere PostFilier(@RequestBody Filiere filiere) {
 		Filiere filiere1 = filiere_service.save(filiere);
 		return filiere1;
@@ -49,13 +46,11 @@ public class Filiere_controller {
 	
 	
 	@DeleteMapping("/{id_Filiere}")
-	@CrossOrigin(origins = "http://localhost:4200")
 	public void DeleteFiliereById(@PathVariable Long id_Filiere) {
 		filiere_service.delete(id_Filiere);
 	}
 	
 	@PutMapping({ "/{id_Filiere}" })
-	@CrossOrigin(origins = "http://localhost:4200")
 	public ResponseEntity<Filiere> updateFiliere(@PathVariable("id_Filiere") Long id_Filiere, @RequestBody Filiere filiere) {
 		filiere_service.update(id_Filiere, filiere);
 		return new ResponseEntity<>(filiere_service.getById(id_Filiere), HttpStatus.OK);

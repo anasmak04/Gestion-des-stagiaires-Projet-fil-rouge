@@ -13,11 +13,7 @@ button{
     background-color: white;
 }
 
-table{
-    /* width: 75%;
-    margin-left: 15%;
-    margin-top: 12px; */
-}
+
 
 .card-body{
     display: flex;
@@ -99,3 +95,6 @@ input{
     padding-left: 12px;
 }
 
+a{
+    text-decoration: none;
+}

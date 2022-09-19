@@ -6,6 +6,7 @@ import com.example.server.entities.Filiere;
 import com.example.server.repository.Filiere_repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -17,7 +18,7 @@ public class Filiere_Service implements Services_Dao<Filiere> {
 		
 	@Override  
 	public List<Filiere> getall() {
-		return filiere_repository.findAll(); 
+		return filiere_repository.findAll(); //sort by fillier_id
 	}
 
 	@Override 
