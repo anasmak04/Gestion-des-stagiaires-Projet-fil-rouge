@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "id_Filiere")
+@JsonIdentityInfo(scope = Filiere.class, generator = ObjectIdGenerators.PropertyGenerator.class,property = "id_Filiere")
 public class Filiere {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional = false)
