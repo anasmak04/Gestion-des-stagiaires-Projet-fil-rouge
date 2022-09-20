@@ -20,7 +20,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -51,7 +50,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NgxPaginationModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

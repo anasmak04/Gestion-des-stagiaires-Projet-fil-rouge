@@ -89,3 +89,7 @@ svg{
 a{
     text-decoration: none;
 }
+
+body{
+    height: 533px;
+}

@@ -3,3 +3,9 @@ a{
     font-weight: bolder;
     margin: 3px;
 }
+
+.div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
