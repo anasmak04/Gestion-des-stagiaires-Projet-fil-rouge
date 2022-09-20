@@ -1,5 +1,6 @@
 .card{
     width: 100%;
+    text-align: center;
 }
 
 .container{
@@ -13,6 +14,8 @@
 
   .card img{
     width: 20%;
+    margin: 0 auto;
+    display: block;
   }
 
   .card-text{
@@ -20,5 +23,7 @@
   }
 
   .card-title{
+    text-align: center;
     color: gray;
+    font-size: 23px;
   }
