@@ -13,6 +13,19 @@ export class CardsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  studentsN:number = 16;
+  niveauStudentsN:number = 13;
+  filieresN:number = 23;
+  usersN:number = 45;
+
+
+
+  getData(){
+     //request ////
+
+      //  this.studentsN = data.student_id;
+  }
+
   event(){
     this.router.navigate([''])
   }

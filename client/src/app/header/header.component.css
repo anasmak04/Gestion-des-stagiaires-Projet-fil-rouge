@@ -6,3 +6,19 @@ img{
 #admin{
     border: none;
 }
+
+.btn{
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.btn:hover{
+
+        background-color: transparent;
+        color: white;
+        border: none;
+
+}
