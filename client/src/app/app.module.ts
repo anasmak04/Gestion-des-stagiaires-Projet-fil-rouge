@@ -21,6 +21,7 @@ import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     UtilisateurComponent,
     LoginComponent,
     FooterComponent,
+    CardsComponent,
     
     
     

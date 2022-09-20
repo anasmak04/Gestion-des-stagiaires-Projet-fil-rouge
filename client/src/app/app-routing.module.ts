@@ -10,6 +10,7 @@ import { AddFiliereComponent } from './add-filiere/add-filiere.component';
 import { EditFiliereComponent } from './edit-filiere/edit-filiere.component';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { LoginComponent } from './login/login.component';
+import { CardsComponent } from './cards/cards.component';
 
 const routes: Routes = [
   { path: '', component: StagiairesComponent  },
@@ -21,6 +22,8 @@ const routes: Routes = [
   // { path: 'filieres/edit', component: EditFiliereComponent  },
   { path: 'utilisateur', component: UtilisateurComponent  },
   { path: 'login', component: LoginComponent  },
+  { path: 'cards', component: CardsComponent  },
+
 ];
 
 
