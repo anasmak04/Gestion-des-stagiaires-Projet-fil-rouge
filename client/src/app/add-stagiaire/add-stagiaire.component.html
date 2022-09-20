@@ -68,10 +68,13 @@
         />
       </div>
 
-      <!-- <div class="form-group">
+      <div class="form-group">
         <label for="file">File</label>
-        <input id="file" type="file" class="form-control" (change)="($event)" />
-      </div> -->
+        <input id="file" type="file"
+        [(ngModel)]="stagiaire.photo"
+         class="form-control" 
+         (change)="($event)" />
+      </div>
 
       <button (click)="PostSta()" type="button" class="btn btn-light">
         Enregistrer
