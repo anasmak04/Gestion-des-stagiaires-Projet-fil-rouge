@@ -34,6 +34,7 @@ export class StagiairesComponent implements OnInit {
   DeleteStagiaire(id :number){
     this.dataDelete.Deletemethod(id).subscribe(() => {
       this.List = this.List.filter((item:{id:number}) => item.id !== id)
+      alert(" are you sure  you want to delete it")
       console.log("from delete")
     })
   }
