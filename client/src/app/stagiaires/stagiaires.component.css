@@ -103,3 +103,26 @@ a{
 body{
     height: 540px;
 }
+
+
+@media screen and (max-width:581px){
+    .card{
+        width: auto;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
+    .card-body{
+        display: flex;
+       flex-direction: column;
+    }
+    
+
+    .input-group{
+        width: auto;
+        height: auto;
+    }
+    
+}
