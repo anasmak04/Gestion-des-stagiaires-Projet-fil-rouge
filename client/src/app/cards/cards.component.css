@@ -1,0 +1,24 @@
+.card{
+    width: 100%;
+}
+
+.container{
+    display: grid;
+    margin-top: 20px;
+    place-items: center;
+    gap: 40px;
+    color: white;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  }
+
+  .card img{
+    width: 20%;
+  }
+
+  .card-text{
+    color: black;
+  }
+
+  .card-title{
+    color: gray;
+  }
