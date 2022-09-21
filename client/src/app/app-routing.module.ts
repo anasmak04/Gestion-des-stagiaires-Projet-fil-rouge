@@ -11,6 +11,7 @@ import { EditFiliereComponent } from './edit-filiere/edit-filiere.component';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { LoginComponent } from './login/login.component';
 import { CardsComponent } from './cards/cards.component';
+// import { CardsComponent } from './cards/cards.component';
 
 const routes: Routes = [
   { path: '', component: StagiairesComponent  },

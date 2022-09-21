@@ -39,4 +39,11 @@ export class StagiairesComponent implements OnInit {
     })
   }
   
+
+  // open() {
+  //   const modalRef = this.modalService.open(NgbdModalContent);
+  //   modalRef.componentInstance.name = 'World';
+  // }
+
+  
 }
