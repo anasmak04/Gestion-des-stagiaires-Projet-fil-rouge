@@ -14,7 +14,7 @@
         />
       </div>
 
-      <a routerLink="AddStagiaire" class="link-primary"
+      <a *ngIf="authservices.hasRole('ADMIN')" routerLink="AddStagiaire" class="link-primary"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -58,7 +58,7 @@
             <td>{{ user.filiere.id_Filiere }}</td>
             <td><img src="{{ user.photo }}" alt="image" /></td>
             <td class="btns">
-              <a [routerLink]="['edit/' + user.id]">
+              <a *ngIf="authservices.hasRole('ADMIN')" [routerLink]="['edit/' + user.id]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -73,7 +73,7 @@
                 </svg>
               </a>
 
-              <a (click)="DeleteStagiaire(user.id)">
+              <a *ngIf="authservices.hasRole('ADMIN')" (click)="DeleteStagiaire(user.id)">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

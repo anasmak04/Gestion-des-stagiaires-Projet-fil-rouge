@@ -54,7 +54,7 @@ export class EditerComponent implements OnInit {
     .subscribe((stag) => {
       console.log(stag)
       this.EmptyInput();
-      this.router.navigate([''])
+      this.router.navigate(['stagiaire'])
 
     });
   }

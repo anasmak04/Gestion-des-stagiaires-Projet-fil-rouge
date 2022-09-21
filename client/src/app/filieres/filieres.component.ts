@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AddfiliereService } from '../services/addfiliere.service';
+import { AuthenticationService } from '../services/authentication.service';
 import { DeleteFiliereService } from '../services/delete-filiere.service';
 
 @Component({
@@ -11,7 +12,8 @@ export class FilieresComponent implements OnInit {
   List:any=[];
   searchText:any;
   constructor(private dataF : AddfiliereService,
-    private dataDelete : DeleteFiliereService) { }
+    private dataDelete : DeleteFiliereService,
+    public authservices : AuthenticationService) { }
 
   ngOnInit(): void {
     this.GetFiliere();

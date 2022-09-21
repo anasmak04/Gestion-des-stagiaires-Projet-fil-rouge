@@ -22,6 +22,8 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { CardsComponent } from './cards/cards.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AdminTemplateComponent } from './admin-template/admin-template.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { CardsComponent } from './cards/cards.component';
     LoginComponent,
     FooterComponent,
     CardsComponent,
+    AdminTemplateComponent,
     
     
     
@@ -53,7 +56,8 @@ import { CardsComponent } from './cards/cards.component';
     NgxPaginationModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
