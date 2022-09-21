@@ -1,11 +1,12 @@
 .card{
     width: 100%;
     text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container{
     display: grid;
-    margin-top: 20px;
+    margin-top: 50px;
     place-items: center;
     gap: 40px;
     color: white;
@@ -26,4 +27,9 @@
     text-align: center;
     color: gray;
     font-size: 23px;
+  }
+
+  .btn:hover{
+    background-color: transparent;
+    color: black;
   }
