@@ -39,7 +39,7 @@ front-end - with Angular 11 as the main framework, with Templates, Components an
   <li>bootstrap</li>
   <li>angular material</li>
 
-#Getting Sgitarted
+# Getting Sgitarted
 <h2>To install this example application, run the following commands: </h2>
 
 ````
