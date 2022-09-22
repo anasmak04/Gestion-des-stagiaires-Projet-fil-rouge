@@ -1,3 +1,4 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { AddStagiaireServiceService } from '../services/add-stagiaire-service.service';
@@ -20,10 +21,8 @@ export class CardsComponent implements OnInit {
     this.getDataFiliere();
     this.totalF;
   }
-  studentsN:number = 16;
-  niveauStudentsN:number = 13;
-  filieresN:number = 23;
-  usersN:number = 45;
+  niveauStudentsN:number =5;
+  usersN:number = 3;
 
   List:any =[];
   ListF:any=[];

@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
       next : (findUser) => {
           this.authService.authenticateUser(findUser).subscribe({
             next : (data) => {
-              this.router.navigate(["admin"])
+              this.router.navigate(["admin/cards"])
             }
           })
       },

@@ -18,7 +18,7 @@ export class FilieresComponent implements OnInit {
   ngOnInit(): void {
     this.GetFiliere();
   }
-
+ 
 
   GetFiliere(){
     this.dataF.Get().subscribe((result) => {
