@@ -38,13 +38,20 @@ front-end - with Angular 11 as the main framework, with Templates, Components an
   <li>css3</li>
   <li>bootstrap</li>
   <li>angular material</li>
+</ul>
 
-# Getting Sgitarted
+# Getting Started
 <h2>To install this example application, run the following commands: </h2>
 
 ````
 git clone https://github.com/anasmak04/Project-fil-rouge-.git spring-angular-project-example
+
 ````
 
+<h2>This will get a copy of the project installed locally. To install all of its dependencies and start each app, follow the instructions below.</h2>
+<h2>To run the server, cd into the server folder and run : </h2>
+````
+./mvnw spring-boot:run
 
-</ul>
+````
+
