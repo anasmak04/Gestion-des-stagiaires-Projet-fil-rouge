@@ -16,6 +16,7 @@ export class AuthenticationService {
     this.users.push({username : "user1", password : "anuser", roles :["USER"]});
     this.users.push({username : "user2", password : "anuser", roles :["USER"]});
     this.users.push({username : "admin", password : "anuser", roles :["USER","ADMIN"]});
+    this.users.push({username : "simplon", password : "simplon123", roles :["USER","ADMIN"]});
    }
 
    public Login(username : String,password:String):Observable<User>{
