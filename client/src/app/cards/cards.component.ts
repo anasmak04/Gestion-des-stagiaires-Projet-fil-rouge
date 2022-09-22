@@ -54,16 +54,16 @@ export class CardsComponent implements OnInit {
   }
 
   event(){
-    this.router.navigate([''])
+    this.router.navigate(['admin/stagiaire'])
   }
 
   event1(){
-    this.router.navigate(['filieres'])
+    this.router.navigate(['admin/filieres'])
   }
 
 
   event2(){
-    this.router.navigate(['filieres'])
+    this.router.navigate(['admin/filieres'])
   }
 
   event3(){
