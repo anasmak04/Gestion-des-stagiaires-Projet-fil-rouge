@@ -44,7 +44,7 @@ front-end - with Angular 11 as the main framework, with Templates, Components an
 <h2>To install this example application, run the following commands: </h2>
 
 ````
-git clone https://github.com/anasmak04/Project-fil-rouge-.git spring-angular-project-example
+git clone https://github.com/anasmak04/Project-fil-rouge-.git  spring-angular-project-example
 
 ````
 
