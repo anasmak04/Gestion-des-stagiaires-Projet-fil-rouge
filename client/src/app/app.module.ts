@@ -16,12 +16,14 @@ import {FormsModule} from '@angular/forms'
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NgxPaginationModule } from 'ngx-pagination';
 import {MatButtonModule} from '@angular/material/button';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { CardsComponent } from './cards/cards.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AdminTemplateComponent } from './admin-template/admin-template.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { CardsComponent } from './cards/cards.component';
     LoginComponent,
     FooterComponent,
     CardsComponent,
+    AdminTemplateComponent,
     
     
     
@@ -53,8 +56,8 @@ import { CardsComponent } from './cards/cards.component';
     NgxPaginationModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    MatDialogModule
-    
+    MatDialogModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

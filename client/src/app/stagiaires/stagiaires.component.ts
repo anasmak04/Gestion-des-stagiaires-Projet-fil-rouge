@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AddStagiaireServiceService } from '../services/add-stagiaire-service.service';
+import { AuthenticationService } from '../services/authentication.service';
 import { DeleteStagiaireService } from '../services/delete-stagiaire.service';
 
 @Component({
@@ -18,7 +19,8 @@ export class StagiairesComponent implements OnInit {
 
 
   constructor(private data: AddStagiaireServiceService, 
-    private dataDelete : DeleteStagiaireService) {}
+    private dataDelete : DeleteStagiaireService,
+    public authservices : AuthenticationService) {}
 
   ngOnInit(): void {
     this.Get();

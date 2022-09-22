@@ -1,5 +1,8 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
+import { AddStagiaireServiceService } from '../services/add-stagiaire-service.service';
+import { AddfiliereService } from '../services/addfiliere.service';
 
 @Component({
   selector: 'app-cards',
@@ -8,22 +11,46 @@ import { Route, Router } from '@angular/router';
 })
 export class CardsComponent implements OnInit {
 
-  constructor(private router : Router) { }
+  constructor(private router : Router,
+    public stagiaire : AddStagiaireServiceService,
+    public filiere : AddfiliereService) { }
 
   ngOnInit(): void {
+    this.getData();
+    this.total;
+    this.getDataFiliere();
+    this.totalF;
+  }
+  niveauStudentsN:number =5;
+  usersN:number = 3;
+
+  List:any =[];
+  ListF:any=[];
+  getData(){
+    this.stagiaire.getStagiaire()
+    .subscribe((result) => {
+      this.List = result;
+      
+    })
   }
 
-  studentsN:number = 16;
-  niveauStudentsN:number = 13;
-  filieresN:number = 23;
-  usersN:number = 45;
+  get totalF() :Number{
+    return this.ListF.length;
+  }
+
+ 
+  get total() :Number{
+    return this.List.length;
+  }
+
+  
 
 
-
-  getData(){
-     //request ////
-
-      //  this.studentsN = data.student_id;
+  getDataFiliere(){
+    this.filiere.Get()
+    .subscribe((result) => {
+      this.ListF = result;
+    })
   }
 
   event(){
@@ -42,4 +69,5 @@ export class CardsComponent implements OnInit {
   event3(){
     this.router.navigate(['utilisateur'])
   }
+
 }

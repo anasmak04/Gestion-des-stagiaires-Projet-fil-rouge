@@ -41,7 +41,7 @@ export class AddStagiaireComponent implements OnInit {
     this.dataADD.PostStagiaire(this.stagiaire).subscribe((item) => {
       this.List = [item, ...this.List]
       this.EmptyInput();
-      this.router.navigate([''])
+      this.router.navigate(['admin/stagiaire'])
     })
   }
 
