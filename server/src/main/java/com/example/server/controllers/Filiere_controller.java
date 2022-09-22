@@ -56,6 +56,4 @@ public class Filiere_controller {
 		return new ResponseEntity<>(filiere_service.getById(id_Filiere), HttpStatus.OK);
 	}
 	
-	
-	
 }

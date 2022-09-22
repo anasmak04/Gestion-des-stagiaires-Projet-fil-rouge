@@ -17,6 +17,13 @@ public class Stagiaire_Service implements Services_Dao<Stagiaire> {
 	@Override
 	public List<Stagiaire> getall() {
 		return stagiaire_Repository.findAll();
+//		class Data {
+//			
+//		
+//		}
+//		return stagiaire_Repository.count();
+
+		
 	}
 
 	@Override

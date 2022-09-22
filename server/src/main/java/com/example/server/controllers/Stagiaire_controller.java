@@ -26,6 +26,12 @@ public class Stagiaire_controller {
 	@Autowired
 	Stagiaire_Service stagiare_service;
 	
+	
+//	@GetMapping('') /data
+//	public List<Stagiaire> getAllStagiaire(){
+//		;
+//	} 
+//	
 	@GetMapping()
 	public List<Stagiaire> getAllStagiaire(){
 		return stagiare_service.getall();
