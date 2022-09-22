@@ -18,7 +18,7 @@ import { AuthenticationGuard } from './guards/authentication.guard';
 const routes: Routes = [
  
   { path: 'stagiaire/edit/:id', component: EditerComponent  },
-  { path: 'AddStagiaire', component: AddStagiaireComponent  },
+  { path: 'stagiaire/AddStagiaire', component: AddStagiaireComponent  },
   { path: 'filieres/AddFiliere', component: AddFiliereComponent  },
   { path: 'filieres/edit/:id', component: EditFiliereComponent  },
   // { path: 'filieres/edit', component: EditFiliereComponent  },
