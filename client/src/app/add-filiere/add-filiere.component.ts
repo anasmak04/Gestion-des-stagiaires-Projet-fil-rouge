@@ -27,7 +27,7 @@ export class AddFiliereComponent implements OnInit {
     this.AddF.AddFiliere(this.filiere).subscribe((item) => {
       this.List = [item,...this.List]
       this.EmptyInput();
-      this.router.navigate(["filieres"])
+      this.router.navigate(["admin/filieres"])
     })
   }
 

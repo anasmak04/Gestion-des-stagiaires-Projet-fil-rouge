@@ -31,7 +31,7 @@ export class EditFiliereComponent implements OnInit {
       },
       error: (e) => 
       {
-        this.router.navigate(['filieres'])
+        this.router.navigate(['admin/filieres'])
         console.error(e);
       }     
     });
@@ -42,7 +42,7 @@ export class EditFiliereComponent implements OnInit {
     this.editdata.MethodeUpdate(this.filiere).subscribe((test) => {
       console.log(test)
       this.Empty();
-      this.router.navigate(['filieres'])
+      this.router.navigate(['admin/filieres'])
     });
   }
 
