@@ -48,10 +48,22 @@ git clone https://github.com/anasmak04/Project-fil-rouge-.git spring-angular-pro
 
 ````
 
-<h2>This will get a copy of the project installed locally. To install all of its dependencies and start each app, follow the instructions below.</h2>
-<h2>To run the server, cd into the server folder and run : </h2>
+<p>This will get a copy of the project installed locally. To install all of its dependencies and start each app, follow the instructions below.</p>
+<p>To run the server, cd into the server folder and run : </p>
 
 ````
 ./mvnw spring-boot:run
 ````
+<p>To run the client, cd into the client folder and run:</p>
+
+````
+npm install && npm start
+````
+
+# Help
+<p>any help please contact me</p>
+````
+anasdev8@gmail.com
+````
+
 
