@@ -21,10 +21,11 @@
         <option value="" disabled selected hidden>
           Rechercher Les Filieres
         </option>
-        <option value="TSDI">TSDI</option>
-        <option value="TRI">TRI</option>
-        <option value="TSGE">TSGE</option>
-        <option value="TMI">TMI</option>
+        <option value="TS">TS</option>
+        <option value="T">T</option>
+        <option value="Q">Q</option>
+        <option value="Licence">Licence</option>
+        <option value="Master">Master</option>
       </select>
       <a *ngIf="authservices.hasRole('ADMIN')" 
       [routerLink]="['/filieres/AddFiliere']"
