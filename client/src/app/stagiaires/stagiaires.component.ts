@@ -13,8 +13,12 @@ export class StagiairesComponent implements OnInit {
   searchText:any;
   searchSelect:any;
 
-  p: Number = 1;
-  count: Number = 5;
+  p: number = 1;
+  count: number = 5;
+  
+
+  pageSize = 0;
+  parePage = 3;
 
 
 
