@@ -18,6 +18,10 @@ export class FilieresComponent implements OnInit {
   ngOnInit(): void {
     this.GetFiliere();
   }
+  p: number = 1;
+  count: number = 5;
+  pageSize = 0;
+  parePage = 3;
  
 
   GetFiliere(){

@@ -64,7 +64,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let data of List | filter: searchText">
+          <tr *ngFor="let data of List | filter: searchText | paginate: { itemsPerPage: parePage, currentPage: p }">
             <th>{{ data.id_Filiere }}</th>
             <td>{{ data.filiere }}</td>
             <td>{{ data.niveau }}</td>
@@ -107,6 +107,8 @@
         </tbody>
       </table>
     </div>
+    <pagination-controls class="myPagination" (pageChange)="p = $event"></pagination-controls>
+
   </div>
 
   <div *ngIf="List.length == 0" class="alert alert-secondary" role="alert">
