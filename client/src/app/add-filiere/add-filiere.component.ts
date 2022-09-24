@@ -14,6 +14,8 @@ export class AddFiliereComponent implements OnInit {
     nom : "",
     niveau : ""
   }
+
+  
   List: any = [];
       
   constructor(private AddF : AddfiliereService,

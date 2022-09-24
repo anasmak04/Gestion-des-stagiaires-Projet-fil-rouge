@@ -22,6 +22,7 @@ export class EditFiliereComponent implements OnInit {
     this.route.params.subscribe( params => {
       this.curr_id = params['id']  
     });
+    
     const data = this.editdata.getFiliere(this.curr_id);
     data.subscribe({
       next: (filiere) => 
