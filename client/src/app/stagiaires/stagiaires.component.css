@@ -33,7 +33,6 @@ button {
   width: 75%;
   margin-left: 15%;
   margin-top: 12px;
-  margin-bottom: 20px;
 }
 
 .input-group {
@@ -91,9 +90,10 @@ a {
   text-decoration: none;
 }
 
-body {
-  height: 516px;
+body{
+  height: 517px;
 }
+
 
 .myPagination{
   margin: 0 auto;
