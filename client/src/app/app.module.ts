@@ -24,6 +24,7 @@ import { CardsComponent } from './cards/cards.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AdminTemplateComponent } from './admin-template/admin-template.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatDialogModule,
     ReactiveFormsModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
