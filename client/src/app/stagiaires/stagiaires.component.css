@@ -94,10 +94,8 @@ body{
   height: 517px;
 }
 
-
-.myPagination{
-  margin: 0 auto;
-  display: block;
+.delete{
+  cursor: pointer;
 }
 
 .add{

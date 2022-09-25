@@ -43,7 +43,9 @@ body {
   width: 36%;
   height: 40px;
 }
-
+.delete {
+  cursor: pointer;
+}
 .add {
   position: relative;
   top: 6px;
