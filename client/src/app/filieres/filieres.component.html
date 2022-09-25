@@ -18,19 +18,23 @@
         class="form-select"
         aria-label="Default select example"
       >
-        <option value="" disabled selected hidden>
-          Rechercher Les Niveau
-        </option>
+        <option value="" disabled selected hidden>Rechercher Les Niveau</option>
         <option value="TS">TS</option>
         <option value="T">T</option>
         <option value="Q">Q</option>
         <option value="Licence">Licence</option>
         <option value="Master">Master</option>
       </select>
-      <a *ngIf="authservices.hasRole('ADMIN')" 
-      [routerLink]="['/filieres/AddFiliere']"
-      class="link-primary"
-        ><mat-icon aria-hidden="false" class="add" aria-label="Example home icon" fontIcon="add"></mat-icon>
+      <a
+        *ngIf="authservices.hasRole('ADMIN')"
+        [routerLink]="['/filieres/AddFiliere']"
+        class="link-primary"
+        ><mat-icon
+          aria-hidden="false"
+          class="add"
+          aria-label="Example home icon"
+          fontIcon="add"
+        ></mat-icon>
 
         Nouveau filiere</a
       >
@@ -47,31 +51,46 @@
             <th scope="col">id</th>
             <th scope="col">Nom de la filirere</th>
             <th scope="col">niveau</th>
-            <th scope="col">actions</th>
+            <th scope="col" *ngIf="authservices.hasRole('ADMIN')">actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let data of List | filter: searchText | paginate: { itemsPerPage: parePage, currentPage: p }">
+          <tr
+            *ngFor="
+              let data of List
+                | filter: searchText
+                | paginate: { itemsPerPage: parePage, currentPage: p }
+            "
+          >
             <th>{{ data.id_Filiere }}</th>
             <td>{{ data.filiere }}</td>
             <td>{{ data.niveau }}</td>
-            <td class="btns">
-              <a *ngIf="authservices.hasRole('ADMIN')" [routerLink]="['/filieres/edit/' + data.id_Filiere]">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="update"></mat-icon>
-
+            <td class="btns" *ngIf="authservices.hasRole('ADMIN')">
+              <a [routerLink]="['/filieres/edit/' + data.id_Filiere]">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="update"
+                ></mat-icon>
               </a>
 
-              <a *ngIf="authservices.hasRole('ADMIN')" (click)="DeleteFiliere(data.id_Filiere)">
-                <mat-icon aria-hidden="false" class="delete" aria-label="Example home icon" fontIcon="delete"></mat-icon>
-
+              <a (click)="DeleteFiliere(data.id_Filiere)">
+                <mat-icon
+                  aria-hidden="false"
+                  class="delete"
+                  aria-label="Example home icon"
+                  fontIcon="delete"
+                ></mat-icon>
               </a>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <pagination-controls class="myPagination" (pageChange)="p = $event"></pagination-controls>
-
+    <pagination-controls
+      class="myPagination"
+      (pageChange)="p = $event"
+    ></pagination-controls>
   </div>
 
   <div *ngIf="List.length == 0" class="alert alert-secondary" role="alert">

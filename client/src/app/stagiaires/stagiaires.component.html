@@ -38,7 +38,7 @@
             <th scope="col">prenom</th>
             <th scope="col">filiere</th>
             <th scope="col">photo</th>
-            <th scope="col">actions</th>
+            <th scope="col" *ngIf="authservices.hasRole('ADMIN')">actions</th>
           </tr>
         </thead>
         <tbody>
@@ -49,13 +49,13 @@
             <td>{{ user.prenom }}</td>
             <td>{{ user.filiere.id_Filiere }}</td>
             <td><img src="{{ user.photo }}" alt="image" /></td>
-            <td class="btns">
-              <a *ngIf="authservices.hasRole('ADMIN')" [routerLink]="['/stagiaire/edit/' + user.id]">
+            <td class="btns" *ngIf="authservices.hasRole('ADMIN')">
+              <a  [routerLink]="['/stagiaire/edit/' + user.id]">
                 <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="update"></mat-icon>
 
               </a>
 
-              <a *ngIf="authservices.hasRole('ADMIN')" (click)="DeleteStagiaire(user.id)">
+              <a  (click)="DeleteStagiaire(user.id)">
                 <mat-icon aria-hidden="false" class="delete" aria-label="Example home icon" fontIcon="delete"></mat-icon>
 
               </a>

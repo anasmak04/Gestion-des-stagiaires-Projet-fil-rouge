@@ -90,18 +90,19 @@ a {
   text-decoration: none;
 }
 
-body{
+body {
   height: 517px;
 }
 
-.delete{
+.delete {
   cursor: pointer;
 }
 
-.add{
+.add {
   position: relative;
   top: 6px;
 }
+
 @media screen and (max-width: 581px) {
   .card {
     width: auto;
