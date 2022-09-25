@@ -25,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AdminTemplateComponent } from './admin-template/admin-template.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import {MatBadgeModule} from '@angular/material/badge';
     BrowserAnimationsModule,
     MatDialogModule,
     ReactiveFormsModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

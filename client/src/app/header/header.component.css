@@ -33,3 +33,15 @@ a {
 .paragraphe {
   padding-top: 15px;
 }
+
+
+.svg{
+  position: relative;
+  top: 7px;
+}
+
+.btn{
+  position: relative;
+  bottom: 3px;
+  
+}

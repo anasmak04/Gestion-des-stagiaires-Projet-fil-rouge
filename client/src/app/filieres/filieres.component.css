@@ -83,9 +83,18 @@ a {
   text-decoration: none;
 }
 
+a{
+  cursor: pointer;
+}
+
 /* body{
     height: 535px;
 } */
+
+.svg{
+  position: relative;
+  top: 6px;
+}
 
 @media screen and (max-width: 581px) {
   .card {
