@@ -1,5 +1,8 @@
 <!-- {{userFormGroup.value | json}} -->
-<div class="text-danger" *ngIf="eroorMessage">{{eroorMessage}}</div>
+<!-- <div class="text-danger" *ngIf="eroorMessage">{{eroorMessage}}</div> -->
+<div class="alert alert-secondary" *ngIf="eroorMessage" role="alert">
+  {{eroorMessage}}
+</div>
 <form [formGroup]="userFormGroup" (ngSubmit)="handleLogin()">
     <!-- Email input -->
     <div class="form-outline mb-4">

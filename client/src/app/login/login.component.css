@@ -19,3 +19,10 @@ h3{
     text-align: center;
     text-transform: uppercase;
 }
+
+.alert{
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    margin-top: 50px;
+}
