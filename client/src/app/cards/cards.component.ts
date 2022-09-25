@@ -7,13 +7,14 @@ import { AddfiliereService } from '../services/addfiliere.service';
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.css']
+  styleUrls: ['./cards.component.css'],
 })
 export class CardsComponent implements OnInit {
-
-  constructor(private router : Router,
-    public stagiaire : AddStagiaireServiceService,
-    public filiere : AddfiliereService) { }
+  constructor(
+    private router: Router,
+    public stagiaire: AddStagiaireServiceService,
+    public filiere: AddfiliereService
+  ) {}
 
   ngOnInit(): void {
     this.getData();
@@ -21,53 +22,44 @@ export class CardsComponent implements OnInit {
     this.getDataFiliere();
     this.totalF;
   }
-  niveauStudentsN:number =5;
-  usersN:number = 3;
+  niveauStudentsN: number = 5;
+  usersN: number = 3;
 
-  List:any =[];
-  ListF:any=[];
-  getData(){
-    this.stagiaire.getStagiaire()
-    .subscribe((result) => {
+  List: any = [];
+  ListF: any = [];
+  getData() {
+    this.stagiaire.getStagiaire().subscribe((result) => {
       this.List = result;
-      
-    })
+    });
   }
 
-  get totalF() :Number{
+  get totalF(): Number {
     return this.ListF.length;
   }
 
- 
-  get total() :Number{
+  get total(): Number {
     return this.List.length;
   }
 
-  
-
-
-  getDataFiliere(){
-    this.filiere.Get()
-    .subscribe((result) => {
+  getDataFiliere() {
+    this.filiere.Get().subscribe((result) => {
       this.ListF = result;
-    })
+    });
   }
 
-  event(){
-    this.router.navigate(['admin/stagiaire'])
+  event() {
+    this.router.navigate(['admin/stagiaire']);
   }
 
-  event1(){
-    this.router.navigate(['admin/filieres'])
+  event1() {
+    this.router.navigate(['admin/filieres']);
   }
 
-
-  event2(){
-    this.router.navigate(['admin/filieres'])
+  event2() {
+    this.router.navigate(['admin/filieres']);
   }
 
-  event3(){
-    this.router.navigate(['utilisateur'])
+  event3() {
+    this.router.navigate(['utilisateur']);
   }
-
 }

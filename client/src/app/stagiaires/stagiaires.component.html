@@ -14,10 +14,10 @@
         />
       </div>
 
-      <a *ngIf="authservices.hasRole('ADMIN')" 
-      [routerLink]="['/stagiaire/AddStagiaire']"
-
-       class="link-primary"
+      <a
+        *ngIf="authservices.hasRole('ADMIN')"
+        [routerLink]="['/stagiaire/AddStagiaire']"
+        class="link-primary"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -54,15 +54,23 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let user of List | filter: searchText | paginate: { itemsPerPage: parePage, currentPage: p }
-          ">
+          <tr
+            *ngFor="
+              let user of List
+                | filter: searchText
+                | paginate: { itemsPerPage: parePage, currentPage: p }
+            "
+          >
             <td>{{ user.id }}</td>
             <td>{{ user.nom }}</td>
             <td>{{ user.prenom }}</td>
             <td>{{ user.filiere.id_Filiere }}</td>
             <td><img src="{{ user.photo }}" alt="image" /></td>
             <td class="btns">
-              <a *ngIf="authservices.hasRole('ADMIN')" [routerLink]="['/stagiaire/edit/' + user.id]">
+              <a
+                *ngIf="authservices.hasRole('ADMIN')"
+                [routerLink]="['/stagiaire/edit/' + user.id]"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -77,7 +85,10 @@
                 </svg>
               </a>
 
-              <a *ngIf="authservices.hasRole('ADMIN')" (click)="DeleteStagiaire(user.id)">
+              <a
+                *ngIf="authservices.hasRole('ADMIN')"
+                (click)="DeleteStagiaire(user.id)"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -95,23 +106,20 @@
                   />
                 </svg>
               </a>
-              
             </td>
           </tr>
         </tbody>
-
       </table>
-
     </div>
-    <pagination-controls class="myPagination" (pageChange)="p = $event"></pagination-controls>
-
+    <pagination-controls
+      class="myPagination"
+      (pageChange)="p = $event"
+    ></pagination-controls>
   </div>
-
 
   <div *ngIf="List.length == 0" class="alert alert-secondary" role="alert">
     Dosen't exist any stagiaire pour l'instant
   </div>
-
 </body>
 
 <app-footer></app-footer>

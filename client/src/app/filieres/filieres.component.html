@@ -18,18 +18,17 @@
         class="form-select"
         aria-label="Default select example"
       >
-        <option value="" disabled selected hidden>
-          Rechercher Les Niveau
-        </option>
+        <option value="" disabled selected hidden>Rechercher Les Niveau</option>
         <option value="TS">TS</option>
         <option value="T">T</option>
         <option value="Q">Q</option>
         <option value="Licence">Licence</option>
         <option value="Master">Master</option>
       </select>
-      <a *ngIf="authservices.hasRole('ADMIN')" 
-      [routerLink]="['/filieres/AddFiliere']"
-      class="link-primary"
+      <a
+        *ngIf="authservices.hasRole('ADMIN')"
+        [routerLink]="['/filieres/AddFiliere']"
+        class="link-primary"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -64,12 +63,21 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let data of List | filter: searchText | paginate: { itemsPerPage: parePage, currentPage: p }">
+          <tr
+            *ngFor="
+              let data of List
+                | filter: searchText
+                | paginate: { itemsPerPage: parePage, currentPage: p }
+            "
+          >
             <th>{{ data.id_Filiere }}</th>
             <td>{{ data.filiere }}</td>
             <td>{{ data.niveau }}</td>
             <td class="btns">
-              <a *ngIf="authservices.hasRole('ADMIN')" [routerLink]="['/filieres/edit/' + data.id_Filiere]">
+              <a
+                *ngIf="authservices.hasRole('ADMIN')"
+                [routerLink]="['/filieres/edit/' + data.id_Filiere]"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -84,7 +92,10 @@
                 </svg>
               </a>
 
-              <a *ngIf="authservices.hasRole('ADMIN')" (click)="DeleteFiliere(data.id_Filiere)">
+              <a
+                *ngIf="authservices.hasRole('ADMIN')"
+                (click)="DeleteFiliere(data.id_Filiere)"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -107,8 +118,10 @@
         </tbody>
       </table>
     </div>
-    <pagination-controls class="myPagination" (pageChange)="p = $event"></pagination-controls>
-
+    <pagination-controls
+      class="myPagination"
+      (pageChange)="p = $event"
+    ></pagination-controls>
   </div>
 
   <div *ngIf="List.length == 0" class="alert alert-secondary" role="alert">

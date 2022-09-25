@@ -11,8 +11,8 @@ export class DeleteFiliereService {
   constructor(private httpclient: HttpClient) {}
 
   DeleteMethod(id_Filiere: number) {
-    return this.httpclient.delete<InterfaceFiliere>(`${this.API}/${id_Filiere}`);
+    return this.httpclient.delete<InterfaceFiliere>(
+      `${this.API}/${id_Filiere}`
+    );
   }
-
-  
 }

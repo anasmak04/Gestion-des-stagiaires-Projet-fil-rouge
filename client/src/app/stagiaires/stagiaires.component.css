@@ -90,15 +90,10 @@ a {
   text-decoration: none;
 }
 
-body{
+body {
   height: 517px;
 }
 
-
-.myPagination{
-  margin: 0 auto;
-  display: block;
-}
 @media screen and (max-width: 581px) {
   .card {
     width: auto;

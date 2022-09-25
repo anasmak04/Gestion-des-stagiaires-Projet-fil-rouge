@@ -10,21 +10,20 @@ import { DeleteStagiaireService } from '../services/delete-stagiaire.service';
 })
 export class StagiairesComponent implements OnInit {
   List: any = [];
-  searchText:any;
-  searchSelect:any;
+  searchText: any;
+  searchSelect: any;
 
   p: number = 1;
   count: number = 5;
-  
 
   pageSize = 0;
   parePage = 3;
 
-
-
-  constructor(private data: AddStagiaireServiceService, 
-    private dataDelete : DeleteStagiaireService,
-    public authservices : AuthenticationService) {}
+  constructor(
+    private data: AddStagiaireServiceService,
+    private dataDelete: DeleteStagiaireService,
+    public authservices: AuthenticationService
+  ) {}
 
   ngOnInit(): void {
     this.Get();
@@ -33,23 +32,15 @@ export class StagiairesComponent implements OnInit {
   Get() {
     this.data.getStagiaire().subscribe((result) => {
       this.List = result;
-      console.log(result)
+      console.log(result);
     });
   }
 
-  DeleteStagiaire(id :number){
+  DeleteStagiaire(id: number) {
     this.dataDelete.Deletemethod(id).subscribe(() => {
-      this.List = this.List.filter((item:{id:number}) => item.id !== id)
-      alert(" are you sure  you want to delete it")
-      console.log("from delete")
-    })
+      this.List = this.List.filter((item: { id: number }) => item.id !== id);
+      alert(' are you sure  you want to delete it');
+      console.log('from delete');
+    });
   }
-  
-
-  // open() {
-  //   const modalRef = this.modalService.open(NgbdModalContent);
-  //   modalRef.componentInstance.name = 'World';
-  // }
-
-  
 }
