@@ -7,12 +7,10 @@ import { InterfaceStagiaire } from '../models/interface-stagiaire';
   providedIn: 'root',
 })
 export class DeleteStagiaireService {
-  API = environment.API_DELETE_STAGIAIRE;  
+  API = environment.API_DELETE_STAGIAIRE;
   constructor(private httpclient: HttpClient) {}
 
   Deletemethod(id: number) {
     return this.httpclient.delete<InterfaceStagiaire>(`${this.API}/${id}`);
   }
-
-  
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit,EventEmitter } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { AddStagiaireServiceService } from '../services/add-stagiaire-service.service';
 
@@ -14,24 +14,24 @@ export class AddStagiaireComponent implements OnInit {
     id: '',
     nom: '',
     prenom: '',
-    filiere : {
+    filiere: {
       id_Filiere: '',
-  },
+    },
     photo: '',
   };
 
-
-  constructor(private dataADD: AddStagiaireServiceService,
-    private router: Router) {}
+  constructor(
+    private dataADD: AddStagiaireServiceService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {}
 
-  onFileChange(event:any) {
-  
+  onFileChange(event: any) {
     if (event.target.files.length > 0) {
       const file = event.target.files[0];
       this.stagiaire.patchValue({
-        fileSource: file
+        fileSource: file,
       });
     }
   }
@@ -42,14 +42,13 @@ export class AddStagiaireComponent implements OnInit {
     // dataADD.append('file', 'assets/5907.jpg');
     // console.log(dataADD);
     this.dataADD.PostStagiaire(this.stagiaire).subscribe((item) => {
-      this.List = [item, ...this.List]
+      this.List = [item, ...this.List];
       this.EmptyInput();
-      this.router.navigate(['admin/stagiaire'])
-    })
+      this.router.navigate(['admin/stagiaire']);
+    });
   }
 
-  EmptyInput(){
-    this.stagiaire = "";
+  EmptyInput() {
+    this.stagiaire = '';
   }
-
 }

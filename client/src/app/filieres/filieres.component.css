@@ -1,122 +1,116 @@
-.btns{
-    display: flex;
-    padding: 12px;
-    gap: 12px;
+.btns {
+  display: flex;
+  padding: 12px;
+  gap: 12px;
 }
 
-td img{
-    width: 30px;
+td img {
+  width: 30px;
 }
 
-button{
-    border: none;
-    background-color: white;
+button {
+  border: none;
+  background-color: white;
 }
 
-
-
-.panel{
-    width: 75%;
-    margin-left: 15%;
-    margin-top: 12px;
+.panel {
+  width: 75%;
+  margin-left: 15%;
+  margin-top: 12px;
 }
 
-.panel-body{
-    display: flex;
+.panel-body {
+  display: flex;
 }
 
-.card{
-    width: 75%;
-    margin-left: 15%;
-    margin-top: 12px;
-    /* margin-bottom: 20px; */
+.card {
+  width: 75%;
+  margin-left: 15%;
+  margin-top: 12px;
+  /* margin-bottom: 20px; */
 }
 
-body{
-    height: 517px;
+body {
+  height: 517px;
 }
 
-.form-select{
-    width: 30%;
-    height: 40px;
+.form-select {
+  width: 30%;
+  height: 40px;
 }
 
-.input-group{
-    width: 36%;
-    height: 40px;
-
+.input-group {
+  width: 36%;
+  height: 40px;
 }
 
-
-.btn{
-    height: 40px;
-    margin-left: 20px;
+.add {
+  position: relative;
+  top: 6px;
 }
 
-.card-body{
-    display: flex;
-    gap: 30px;
+.btn {
+  height: 40px;
+  margin-left: 20px;
 }
 
-.link-primary{
-    text-decoration: none;
-    margin-top: 8px;
+.card-body {
+  display: flex;
+  gap: 30px;
 }
 
-svg{
-    cursor: pointer;
+.link-primary {
+  text-decoration: none;
+  margin-top: 8px;
 }
 
+svg {
+  cursor: pointer;
+}
 
 .alert {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-    margin-top: 12px;
-  }
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 12px;
+}
 
-  th{
-    text-transform: uppercase;
-  }
+th {
+  text-transform: uppercase;
+}
 
-  /* .card{
+/* .card{
     margin-bottom: 41px;
 } */
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /* body{
     height: 535px;
 } */
 
+@media screen and (max-width: 581px) {
+  .card {
+    width: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media screen and (max-width:581px){
-    .card{
-        width: auto;
-        margin-left: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
+  .input-group {
+    width: auto;
+    height: auto;
+  }
 
-
-    .card-body{
-        display: flex;
-       flex-direction: column;
-    }
-    
-
-    .input-group{
-        width: auto;
-        height: auto;
-    }
-
-
-    .table{
-        margin-bottom: 30px;
-    }
-    
+  .table {
+    margin-bottom: 30px;
+  }
 }

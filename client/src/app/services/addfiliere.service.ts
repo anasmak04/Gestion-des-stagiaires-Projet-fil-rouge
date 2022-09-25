@@ -4,23 +4,17 @@ import { environment } from 'src/environments/environment';
 import { InterfaceFiliere } from '../models/interface-filiere';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AddfiliereService {
-
   API = environment.API_Filieres_Get_Post;
-  constructor(private httpclient : HttpClient) {
-   }
-   
-  
+  constructor(private httpclient: HttpClient) {}
 
-   Get(){
+  Get() {
     return this.httpclient.get<InterfaceFiliere>(this.API);
-   }
+  }
 
-   AddFiliere(filiere :any){
-    return this.httpclient.post(this.API,filiere)
-   }
-
-
+  AddFiliere(filiere: any) {
+    return this.httpclient.post(this.API, filiere);
+  }
 }
