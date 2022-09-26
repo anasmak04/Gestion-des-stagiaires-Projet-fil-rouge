@@ -12,7 +12,6 @@
           placeholder="le nom"
           name="id"
           [(ngModel)]="stagiaire.id"
-
         />
       </div>
 
@@ -25,7 +24,6 @@
           placeholder="le Prenom"
           name="nom"
           [(ngModel)]="stagiaire.nom"
-
         />
       </div>
 
@@ -38,30 +36,29 @@
           placeholder="le nom"
           name="prenom"
           [(ngModel)]="stagiaire.prenom"
-
         />
       </div>
       <div class="form-group">
         <label for="">Filere</label>
         <input
-        type="number"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="le filiere"
-        [(ngModel)]="stagiaire.filiere.id_Filiere"
-        name="filiere.id_Filiere"
-      />
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="le filiere"
+          [(ngModel)]="stagiaire.filiere.id_Filiere"
+          name="filiere.id_Filiere"
+        />
       </div>
       <div class="form-group">
         <label for="">Image</label>
-        <input
-          name="photo"
-          class="form-control"
-          type="file"
-          id="myFile"
-        />
+        <input name="photo" class="form-control" type="file" id="myFile" />
       </div>
-      <button routerLink="stagiaire" (click)="PutMethodee()"  type="button" class="btn btn-light">
+      <button
+        routerLink="stagiaire"
+        (click)="PutMethodee()"
+        type="button"
+        class="btn btn-light"
+      >
         Enregistrer
       </button>
     </form>

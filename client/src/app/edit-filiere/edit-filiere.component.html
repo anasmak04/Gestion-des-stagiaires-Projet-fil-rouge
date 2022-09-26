@@ -1,5 +1,5 @@
 <div class="card">
-  <div class="card-header">Edit  filiere</div>
+  <div class="card-header">Edit filiere</div>
 
   <div class="card-body">
     <form>
@@ -27,21 +27,26 @@
         />
       </div>
 
-
-
       <div class="form-group">
         <label for="">Niveau</label>
-        <select     
+        <select
           name="niveau"
-        [(ngModel)]="filiere.niveau" class="form-select" aria-label="Default select example">
-        <option value="" disabled selected hidden>Rechercher Les Filieres</option>
+          [(ngModel)]="filiere.niveau"
+          class="form-select"
+          aria-label="Default select example"
+        >
+          <option value="" disabled selected hidden>
+            Rechercher Les Filieres
+          </option>
           <option value="TS">TS</option>
           <option value="T">T</option>
           <option value="Q">Q</option>
         </select>
       </div>
- 
-      <button  (click)="PutMethod()" type="button" class="btn btn-light">Enregistrer</button>
+
+      <button (click)="PutMethod()" type="button" class="btn btn-light">
+        Enregistrer
+      </button>
     </form>
   </div>
 </div>

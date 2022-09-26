@@ -1,20 +1,18 @@
-.card{
-    width: 75%;
-    margin-left: 15%;
-    margin-top: 20px;
+.card {
+  width: 75%;
+  margin-left: 15%;
+  margin-top: 20px;
 }
 
-.form-group{
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 20px;
-    
+.form-group {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
 }
 
-button{
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px;
+button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
 }
-

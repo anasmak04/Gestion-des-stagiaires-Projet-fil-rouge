@@ -1,28 +1,27 @@
-.form-outline{
-    margin: 0 auto;
-    display: block;
-    width: 500px;
+.form-outline {
+  margin: 0 auto;
+  display: block;
+  width: 500px;
 }
 
-.btn{
-    margin: 0 auto;
-    display: block;
-    width: 500px;
+.btn {
+  margin: 0 auto;
+  display: block;
+  width: 500px;
 }
 
-form{
-    margin-top:80px;
+form {
+  margin-top: 80px;
 }
 
-
-h3{
-    text-align: center;
-    text-transform: uppercase;
+h3 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.alert{
-    margin: 0 auto;
-    display: block;
-    width: 30%;
-    margin-top: 50px;
+.alert {
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+  margin-top: 50px;
 }

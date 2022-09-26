@@ -4,21 +4,18 @@ import { AuthenticationService } from '../services/authentication.service';
 @Component({
   selector: 'app-utilisateur',
   templateUrl: './utilisateur.component.html',
-  styleUrls: ['./utilisateur.component.css']
+  styleUrls: ['./utilisateur.component.css'],
 })
 export class UtilisateurComponent implements OnInit {
-
-  constructor(public data : AuthenticationService) { }
-      List:any = [];
-      searchText:any;
+  constructor(public data: AuthenticationService) {}
+  List: any = [];
+  searchText: any;
   ngOnInit(): void {
-      this.get()
+    this.get();
   }
 
-  get(){
-   this.List =  this.data.users
-   console.log(this.List)
+  get() {
+    this.List = this.data.users;
+    console.log(this.List);
   }
-
-
 }

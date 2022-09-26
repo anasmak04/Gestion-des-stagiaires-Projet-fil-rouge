@@ -14,13 +14,17 @@
         />
       </div>
 
-      <a *ngIf="authservices.hasRole('ADMIN')" 
-      [routerLink]="['/stagiaire/AddStagiaire']"
-
-       class="link-primary"
-        >
-
-        <mat-icon aria-hidden="false" class="add" aria-label="Example home icon" fontIcon="add"></mat-icon>
+      <a
+        *ngIf="authservices.hasRole('ADMIN')"
+        [routerLink]="['/stagiaire/AddStagiaire']"
+        class="link-primary"
+      >
+        <mat-icon
+          aria-hidden="false"
+          class="add"
+          aria-label="Example home icon"
+          fontIcon="add"
+        ></mat-icon>
         Nouveau stagiaire</a
       >
     </div>
@@ -42,40 +46,49 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let user of List | filter: searchText | paginate: { itemsPerPage: parePage, currentPage: p }
-          ">
+          <tr
+            *ngFor="
+              let user of List
+                | filter: searchText
+                | paginate: { itemsPerPage: parePage, currentPage: p }
+            "
+          >
             <td>{{ user.id }}</td>
             <td>{{ user.nom }}</td>
             <td>{{ user.prenom }}</td>
             <td>{{ user.filiere.id_Filiere }}</td>
             <td><img src="{{ user.photo }}" alt="image" /></td>
             <td class="btns" *ngIf="authservices.hasRole('ADMIN')">
-              <a  [routerLink]="['/stagiaire/edit/' + user.id]">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="update"></mat-icon>
-
+              <a [routerLink]="['/stagiaire/edit/' + user.id]">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="update"
+                ></mat-icon>
               </a>
 
-              <a  (click)="DeleteStagiaire(user.id)">
-                <mat-icon aria-hidden="false" class="delete" aria-label="Example home icon" fontIcon="delete"></mat-icon>
-
+              <a (click)="DeleteStagiaire(user.id)">
+                <mat-icon
+                  aria-hidden="false"
+                  class="delete"
+                  aria-label="Example home icon"
+                  fontIcon="delete"
+                ></mat-icon>
               </a>
-              
             </td>
           </tr>
         </tbody>
-
       </table>
-
     </div>
-    <pagination-controls class="myPagination" (pageChange)="p = $event"></pagination-controls>
-
+    <pagination-controls
+      class="myPagination"
+      (pageChange)="p = $event"
+    ></pagination-controls>
   </div>
-
 
   <div *ngIf="List.length == 0" class="alert alert-secondary" role="alert">
     Dosen't exist any stagiaire pour l'instant
   </div>
-
 </body>
 
 <app-footer></app-footer>

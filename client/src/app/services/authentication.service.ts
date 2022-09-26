@@ -16,12 +16,12 @@ export class AuthenticationService {
     this.users.push({
       username: 'admin',
       password: 'anuser',
-      roles: ['USER', 'ADMIN'],
+      roles: ['ADMIN'],
     });
     this.users.push({
       username: 'simplon',
       password: 'simplon123',
-      roles: ['USER', 'ADMIN'],
+      roles: ['ADMIN'],
     });
   }
 
