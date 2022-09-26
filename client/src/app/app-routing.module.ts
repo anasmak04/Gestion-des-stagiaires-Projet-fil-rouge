@@ -22,9 +22,9 @@ const routes: Routes = [
   { path: 'filieres/AddFiliere', component: AddFiliereComponent  },
   { path: 'filieres/edit/:id', component: EditFiliereComponent  },
   // { path: 'filieres/edit', component: EditFiliereComponent  },
-  { path: 'utilisateur', component: UtilisateurComponent  },
   { path: '', component: LoginComponent  },
   { path: 'admin', component: AdminTemplateComponent,canActivate : [AuthenticationGuard], children :[
+    { path: 'utilisateur', component: UtilisateurComponent  },
     { path: 'cards', component: CardsComponent  },
     { path: 'stagiaire', component: StagiairesComponent  },
     { path: 'filieres', component: FilieresComponent},
