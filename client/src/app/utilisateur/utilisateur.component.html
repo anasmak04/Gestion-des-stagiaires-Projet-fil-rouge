@@ -4,13 +4,13 @@
   <div class="card-body">
     <div class="input-group mb-3">
       <input
-        type="text"
-        class="form-control"
-        placeholder="Rechercher par un mot cle"
-        aria-label="Recipient's username"
-        aria-describedby="basic-addon2"
-        name="search"
-      />
+          [(ngModel)]="searchText"
+          type="text"
+          class="form-control"
+          placeholder="taper un mot cle"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+        />
     </div>
   </div>
 </div>
@@ -20,14 +20,18 @@
 
   <div class="card-body">
     <table class="table">
-      <tr>
-        <th scope="col">username</th>
-        <th scope="col">role</th>
-      </tr>
-      <tr *ngFor="let dataU of List">
-        <td>{{dataU.username}}</td>
-        <td>{{dataU.roles}}</td>
-      </tr>
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">username</th>
+          <th scope="col">role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dataU of List | filter: searchText">
+          <td>{{ dataU.username }}</td>
+          <td>{{ dataU.roles }}</td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </div>

@@ -10,6 +10,7 @@ export class UtilisateurComponent implements OnInit {
 
   constructor(public data : AuthenticationService) { }
       List:any = [];
+      searchText:any;
   ngOnInit(): void {
       this.get()
   }
