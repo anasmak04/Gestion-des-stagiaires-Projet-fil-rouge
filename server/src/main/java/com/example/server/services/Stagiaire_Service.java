@@ -17,12 +17,6 @@ public class Stagiaire_Service implements Services_Dao<Stagiaire> {
 	@Override
 	public List<Stagiaire> getall() {
 		return stagiaire_Repository.findAll();
-//		class Data {
-//			
-//		
-//		}
-//		return stagiaire_Repository.count();
-
 		
 	}
 
@@ -45,8 +39,7 @@ public class Stagiaire_Service implements Services_Dao<Stagiaire> {
 		stagiaire1.setNom(stagiaire.getNom());
 		stagiaire1.setPrenom(stagiaire.getPrenom());
 		stagiaire1.setFiliere(stagiaire.getFiliere());
-		stagiaire_Repository.save(stagiaire1);
-		
+		stagiaire_Repository.save(stagiaire1); 
 	}
 
 	@Override

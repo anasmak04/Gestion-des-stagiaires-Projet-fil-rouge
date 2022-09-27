@@ -24,6 +24,6 @@ public class Stagiaire {
 	
 	@ManyToOne
 	@JoinColumn(name = "id_Filiere")
-	private Filiere filiere; 
+	private Filiere filiere;
 	
 }
