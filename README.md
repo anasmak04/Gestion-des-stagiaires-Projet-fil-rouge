@@ -68,3 +68,6 @@ anasdev8@gmail.com
 ````
 
 
+![localhost_4200_admin_cards_1](https://user-images.githubusercontent.com/102997226/193618670-6d181f93-7d8a-48f0-9acc-1942c96d5777.png)
+![localhost_4200_admin_cards_2](https://user-images.githubusercontent.com/102997226/193618678-cd03bebe-3faa-4c99-9782-12f7e957cb43.png)
+
