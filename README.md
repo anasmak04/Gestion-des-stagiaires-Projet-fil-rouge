@@ -26,7 +26,6 @@ front-end - with Angular 11 as the main framework, with Templates, Components an
 </li>
 <li>Maven 3.8.6
 </li>
-<li>json-web-token</li>
 </ul>
 
 # Front-end
