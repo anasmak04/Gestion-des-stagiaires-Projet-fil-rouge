@@ -27,7 +27,7 @@
     "bootstrap": "^5.2.1",
     "bootstrap-icons": "^1.9.1",
     "font-awesome": "^4.7.0",
-    "json-server": "^0.17.0",
+    "json-server": "^0.17.1",
     "ng2-search-filter": "^0.5.1",
     "ngx-pagination": "^6.0.2",
     "rxjs": "~7.5.0",
